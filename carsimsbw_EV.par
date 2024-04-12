@@ -1,0 +1,5483 @@
+PARSFILE
+
+#EXPANDED_PARSFILE 2.0
+
+! This is an expansion of the parsfile: "Runs\Run381.par"
+! It contains the contents of that file plus the contents of any files linked
+! with the "PARSFILE" or "SPECIAL_PARSFILE" keywords.
+
+! File created: 10:59 on May. 20, 2023 by CarSim Version 8.02, March 2010
+
+PRODUCT_NAME CarSim
+
+ENTER_PARSFILE Runs\Run381.par`05-20-2023`10:17:59
+#FullDataName CarSim Run Control`Baseline`20230503
+#VehicleCode Ind_Ind
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+OPT_INT_METHOD 2
+
+ENTER_PARSFILE Models\Simulink\Cmex172.par`05-20-2023`09:59:04
+#FullDataName Models: Simulink`aaas`20230503
+#RunMdlFile e:\3工作tb\记录\2023年5月\20230503纯电动线控转向carsim-simulink\提交VV\EV_EBW2018B.mdl
+#RingCtrl1 2
+OPT_INT_METHOD 2
+#RingCtrl2 1
+*X64SOLVER 1
+#CheckBox0 1
+*USE_ALT_DIR 1
+#CheckBox1 0
+*USE_DIFF_SOLVERS 0
+#CheckBox2 0
+OPT_IO_UPDATE 0
+#CheckBox3 0
+
+#AltPath E:\3工作tb\记录\2023年5月\20230503纯电动线控转向carsim-simulink\提交VV
+*ALTERNATE_PATH E:\3工作tb\记录\2023年5月\20230503纯电动线控转向carsim-simulink\提交VV
+
+ENTER_PARSFILE IO_Channels\I_Channels\I_Ch158.par`05-20-2023`10:43:33
+#FullDataName I/O Channels: Import`IN`20230503
+*README_FILE Programs\solvers\ReadMe\i_i_imports_tab.txt
+
+#MiscYellow0
+IMP_STEER_L1 Add 0.0 0
+IMP_STEER_R1 Add 0.0 0
+IMP_MY_OUT_D1_L Add 0.0 0
+IMP_MY_OUT_D1_R Add 0.0 0
+#ENDMYellow
+
+#RingCtrl0 1
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { 20230503 } IN
+#Library : I/O Channels: Import
+#DataSet : IN
+#Category: 20230503
+#FileID  : I_Ch158
+#Product : CarSim Version 8.02, March 2010
+#Last update: 05-20-2023 10:43:33
+#VehCode Import Channels
+
+EXIT_PARSFILE IO_Channels\I_Channels\I_Ch158.par
+
+#BlueLink0 I/O Channels: Import`IN` 20230503` , Import
+
+
+ENTER_PARSFILE IO_Channels\O_Channels\O_Ch157.par`06-03-2022`23:13:30
+#FullDataName I/O Channels: Export`OUT`20230503
+*README_FILE Programs\solvers\ReadMe\i_i__s_outputs_tab.txt
+
+#CheckBox0 0
+
+#RingCtrl0 2
+
+EXP_Vx
+EXP_AVz
+EXP_Beta
+EXP_Steer_SW
+EXP_Mz_L1
+EXP_Mz_R1
+EXP_Xo
+EXP_Yo
+EXP_Ay
+#MiscYellow0
+#Number of Selected Channels: 9
+#CHN_NAME: Vx
+#CHN_NAME: AVz
+#CHN_NAME: Beta
+#CHN_NAME: Steer_SW
+#CHN_NAME: Mz_L1
+#CHN_NAME: Mz_R1
+#CHN_NAME: Xo
+#CHN_NAME: Yo
+#CHN_NAME: Ay
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { 20230503 } OUT
+#Library : I/O Channels: Export
+#DataSet : OUT
+#Category: 20230503
+#FileID  : O_Ch157
+#Product : CarSim Version 8.02, March 2010
+#Last update: 06-03-2022 23:13:30
+#VehCode Export Channels
+
+EXIT_PARSFILE IO_Channels\O_Channels\O_Ch157.par
+
+#BlueLink1 I/O Channels: Export`OUT` 20230503` , Export
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+LOG_ENTRY Used Dataset: Models: Simulink; { 20230503 } aaas
+#Library : Models: Simulink
+#DataSet : aaas
+#Category: 20230503
+#FileID  : Cmex172
+#Product : CarSim Version 8.02, March 2010
+#Last update: 05-20-2023 09:59:04
+#VehCode
+
+EXIT_PARSFILE Models\Simulink\Cmex172.par
+
+#BlueLink12 Models: Simulink`aaas` 20230503` , Models
+
+
+ENTER_PARSFILE Animator\Cameras\Camera287.par`02-03-2010`10:01:15
+#FullDataName Animator: Camera Setup`3 deg. Azimuth, Veh. Ref.`20230503
+#RingCtrl1 0
+
+#CheckBox0 0
+#CheckBox1 0
+
+GHOST_COUNT 0
+SET_CAMERA_Reference_Frame 20230503 Camera Tracking X-Y-Z
+
+ENTER_PARSFILE Animator\Frames\Frame369.par`02-03-2010`10:01:08
+#FullDataName Animator: Reference Frame`Camera Tracking X-Y-Z`20230503
+ADD_REFERENCE_FRAME 20230503 Camera Tracking X-Y-Z
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xo
+SET_Y_NAME Yo
+SET_Z_NAME Zo
+
+WRT_Xo
+ANI_Xo
+WRT_Yo
+ANI_Yo
+WRT_Zo
+ANI_Zo
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { 20230503 } Camera Tracking X-Y-Z
+#Library : Animator: Reference Frame
+#DataSet : Camera Tracking X-Y-Z
+#Category: 20230503
+#FileID  : Frame369
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:08
+#VehCode Reference frame
+
+EXIT_PARSFILE Animator\Frames\Frame369.par
+
+#BlueLink0 Animator: Reference Frame`Camera Tracking X-Y-Z` 20230503` , Reference frame for outside camera
+
+SET_LOOKPOINT_Reference_Frame 20230503 Camera Tracking X-Y-Z
+SET_LOOKPOINT_X -2
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0.25
+SET_AZIMUTH 3
+SET_ELEVATION 4.5
+SET_DISTANCE 80
+*SET_LOOKPOINT_X -2
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 0.25
+*SET_AZIMUTH 3
+*SET_ELEVATION 4.5
+*SET_DISTANCE 80
+GHOST_COUNT 0
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 6
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { 20230503 } 3 deg. Azimuth, Veh. Ref.
+#Library : Animator: Camera Setup
+#DataSet : 3 deg. Azimuth, Veh. Ref.
+#Category: 20230503
+#FileID  : Camera287
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:15
+#VehCode Camera
+
+EXIT_PARSFILE Animator\Cameras\Camera287.par
+
+#BlueLink0 Animator: Camera Setup`3 deg. Azimuth, Veh. Ref.` 20230503` , Animator camera
+
+#CheckBox0 1
+#CheckBox1 0
+#CheckBox2 0
+#CheckBox3 1
+#CheckBox4 0
+#CheckBox5 1
+#CheckBox6 0
+#CheckBox7 1
+#CheckBox8 1
+#CheckBox9 1
+
+#RingCtrl0 1
+#RingCtrl1 0
+#RingCtrl3 0
+#RingCtrl6 1
+*RUN_COLOR 0.8 0 0
+
+FLAG_10 381
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+
+ENTER_PARSFILE Vehicles\Assembly\Vehicle214.par`05-20-2023`10:45:39
+#FullDataName Vehicle: Assembly`C-Class, Hatchback`20230503
+#VehCode Ind_Ind
+#CheckBox0 0
+
+#RingCtrl0 1
+OPT_PT 1
+#RingCtrl1 1
+#RingCtrl2 1
+
+* Front components
+iaxle 1
+symbol_push <<axle>> 1
+
+ENTER_PARSFILE Suspensions\Compliance\SuspCmp185.par`02-03-2010`09:58:59
+#FullDataName Suspension: Independent Compliance, Springs, and Dampers`C-Class, Hatchback - Front Comp`20230503
+#RingCtrl0 0
+*OPT_SPR 0
+iside 1
+*R_SPRING_L 0.959
+*R_SPRING_R 0.959
+*R_DAMPER_L 0.965
+*R_DAMPER_R 0.965
+*FS_OFFSET_L 0
+*FS_OFFSET_R 0
+*CT_FX_L 0.43e-3
+*CT_FX_R 0.43e-3
+*CS_FY_L -0.27e-3
+*CS_FY_R -0.27e-3
+*CS_MZ_L 0.38e-2
+*CS_MZ_R 0.38e-2
+*CC_FX_L 0
+*CC_FX_R 0
+*CI_FY_L 0
+*CI_FY_R 0
+*CI_MZ_L 0
+*CI_MZ_R 0
+*C_LONG_L 5.0e-5
+*C_LONG_R 5.0e-5
+*C_LAT_L 4.1e-5
+*C_LAT_R 4.1e-5
+*L_SPG_ADJ_L 0
+*L_SPG_ADJ_R 0
+DAUX 0
+*R_JOUNCE_L 0.965
+*R_JOUNCE_R 0.965
+*R_REBOUND_L 0.965
+*R_REBOUND_R 0.965
+
+
+ENTER_PARSFILE Suspensions\Shocks\Shock134.par`02-03-2010`09:58:56
+#FullDataName Suspension: Shock Absorber`Big Car Damping`20230503
+#RingCtrl0 LINEAR
+#RadioCtrl0 0
+
+
+#DiagramOne0
+FD_TABLE LINEAR
+-1410, -5008
+-720, -3436
+-390, -2324
+-210, -1792
+-90, -1008
+-20, -228
+20, 228
+90, 596
+200, 784
+390, 1100
+760, 1796
+1160, 2560
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { 20230503 } Big Car Damping
+#Library : Suspension: Shock Absorber
+#DataSet : Big Car Damping
+#Category: 20230503
+#FileID  : Shock134
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:56
+#VehCode Shock absorber
+
+EXIT_PARSFILE Suspensions\Shocks\Shock134.par
+
+#BlueLink1 Suspension: Shock Absorber`Big Car Damping` 20230503` , Left shock absorber
+
+
+ENTER_PARSFILE Suspensions\Aux_Roll\AuxMx154.par`02-03-2010`09:58:56
+#FullDataName Suspension: Auxiliary Roll Moment`Linear 384 N-m/deg`20230503
+#RingCtrl0 COEFFICIENT
+#RadioCtrl0 0
+
+*SCALAR 384
+
+MX_AUX_COEFFICIENT 384
+
+LOG_ENTRY Used Dataset: Suspension: Auxiliary Roll Moment; { 20230503 } Linear 384 N-m/deg
+#Library : Suspension: Auxiliary Roll Moment
+#DataSet : Linear 384 N-m/deg
+#Category: 20230503
+#FileID  : AuxMx154
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:56
+#VehCode Aux. Roll Moment
+
+EXIT_PARSFILE Suspensions\Aux_Roll\AuxMx154.par
+
+#BlueLink2 Suspension: Auxiliary Roll Moment`Linear 384 N-m/deg` 20230503` , Roll moment
+
+
+ENTER_PARSFILE Suspensions\Jounce_Rebound\JncRb145.par`02-03-2010`09:58:55
+#FullDataName Suspension: Jounce and Rebound Stops`+60 mm / -40 mm`20230503
+#RingCtrl0 LINEAR
+#RingCtrl1 LINEAR
+#RadioCtrl0 0
+#RadioCtrl1 0
+
+
+#DiagramOne0
+F_JNC_STOP_TABLE LINEAR
+58, 0
+59, 0
+60, 10000
+ENDTABLE
+#DiagramOne1
+F_REB_STOP_TABLE LINEAR
+-40, -10000
+-39, 0
+-38, 0
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Jounce and Rebound Stops; { 20230503 } +60 mm / -40 mm
+#Library : Suspension: Jounce and Rebound Stops
+#DataSet : +60 mm / -40 mm
+#Category: 20230503
+#FileID  : JncRb145
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:55
+#VehCode
+
+EXIT_PARSFILE Suspensions\Jounce_Rebound\JncRb145.par
+
+#BlueLink5 Suspension: Jounce and Rebound Stops`+60 mm / -40 mm` 20230503` , Left jounce / rebound stops
+
+CMP_SPR_SEAT_COEFFICIENT 0.959
+CMP_DAMP_COEFFICIENT 0.965
+FS_OFFSET 0
+CT_FX_COEFFICIENT 0.43e-3
+CS_FY_COEFFICIENT -0.27e-3
+CS_MZ_COEFFICIENT 0.38e-2
+CC_FX_COEFFICIENT 0
+CI_FY_COEFFICIENT 0
+CI_MZ_COEFFICIENT 0
+C_LONG_COEFFICIENT 5.0e-5
+C_LAT_COEFFICIENT 4.1e-5
+L_SPG_ADJ 0
+CMP_JSTOP_COEFFICIENT 0.965
+CMP_RSTOP_COEFFICIENT 0.965
+
+ENTER_PARSFILE Suspensions\Springs\Spring177.par`02-03-2010`09:58:57
+#FullDataName Suspension: Spring`27 N/mm`20230503
+#RingCtrl0 COEFFICIENT
+FS_COMP_COEFFICIENT 27
+FS_EXT_COEFFICIENT 27
+#RadioCtrl0 1
+#RadioCtrl1 0
+
+SPRING_COMP_BETA 2
+SPRING_EXT_BETA 2
+*SCALAR 27
+*OFFSET 20
+
+FS_COMP_OFFSET 20
+FS_EXT_OFFSET -20
+
+LOG_ENTRY Used Dataset: Suspension: Spring; { 20230503 } 27 N/mm
+#Library : Suspension: Spring
+#DataSet : 27 N/mm
+#Category: 20230503
+#FileID  : Spring177
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:57
+#VehCode Spring Alone
+
+EXIT_PARSFILE Suspensions\Springs\Spring177.par
+
+#BlueLink0 Suspension: Spring`27 N/mm` 20230503` , Left
+
+OPT_EXT_SP 0
+FS_OFFSET 0
+CMP_OFFSET 0
+
+iside 2
+#BlueLink4 Suspension: Shock Absorber`Big Car Damping` 20230503` , Right shock absorber
+
+#BlueLink6 Suspension: Jounce and Rebound Stops`+60 mm / -40 mm` 20230503` , Right jounce / rebound stops
+
+CMP_SPR_SEAT_COEFFICIENT 0.959
+CMP_DAMP_COEFFICIENT 0.965
+FS_OFFSET 0
+CT_FX_COEFFICIENT 0.43e-3
+CS_FY_COEFFICIENT -0.27e-3
+CS_MZ_COEFFICIENT 0.38e-2
+CC_FX_COEFFICIENT 0
+CI_FY_COEFFICIENT 0
+CI_MZ_COEFFICIENT 0
+C_LONG_COEFFICIENT 5.0e-5
+C_LAT_COEFFICIENT 4.1e-5
+L_SPG_ADJ 0
+CMP_JSTOP_COEFFICIENT 0.965
+CMP_RSTOP_COEFFICIENT 0.965
+#BlueLink3 Suspension: Spring`27 N/mm` 20230503` , Right
+
+OPT_EXT_SP 0
+FS_OFFSET 0
+CMP_OFFSET 0
+
+LOG_ENTRY Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { 20230503 } C-Class, Hatchback - Front Comp
+#Library : Suspension: Independent Compliance, Springs, and Dampers
+#DataSet : C-Class, Hatchback - Front Comp
+#Category: 20230503
+#FileID  : SuspCmp185
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:59
+#VehCode Independent
+
+EXIT_PARSFILE Suspensions\Compliance\SuspCmp185.par
+
+#BlueLink16 Suspension: Independent Compliance, Springs, and Dampers`C-Class, Hatchback - Front Comp` 20230503` , Front compliance
+
+
+ENTER_PARSFILE Suspensions\Kin_Indy\IndKin173.par`02-03-2010`09:59:00
+#FullDataName Suspension: Independent System Kinematics`C-Class, Hatchback - Front Suspension`20230503
+iside 1
+L_TRACK 1539
+Y_CL_SUSP 0
+M_US 71
+*IW_L 0.9
+*JNC_DESIGN_L 0
+*IW_R 0.9
+*JNC_DESIGN_R 0
+*TOE_L 0
+*TOE_R 0
+*CAMBER_L 0
+*CAMBER_R 0
+R_US_STR 0.8
+
+#RingCtrl0 1
+OPT_JNC_DESIGN 1
+#CheckBox0 0
+
+
+ENTER_PARSFILE Suspensions\Dive\Dive152.par`02-03-2010`09:58:55
+#FullDataName Suspension: Dive Angle (Caster Change)`Front Strut - Front Dive Angle`20230503
+#RingCtrl0 SPLINE
+
+#DiagramOne0
+SUSP_DIVE_TABLE SPLINE
+-70, 0.282157
+-60, 0.243294
+-50, 0.204028
+-40, 0.164309
+-30, 0.124089
+-20, 0.083323
+-10, 0.041971
+0, 0
+10, -0.042617
+20, -0.085893
+30, -0.129828
+40, -0.174396
+50, -0.21954
+60, -0.265153
+70, -0.311062
+ENDTABLE
+#RadioCtrl0 0
+
+SUSP_DIVE_AXLE_TABLE SPLINE
+-70, 0.282157
+-60, 0.243294
+-50, 0.204028
+-40, 0.164309
+-30, 0.124089
+-20, 0.083323
+-10, 0.041971
+0, 0
+10, -0.042617
+20, -0.085893
+30, -0.129828
+40, -0.174396
+50, -0.21954
+60, -0.265153
+70, -0.311062
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Dive Angle (Caster Change); { 20230503 } Front Strut - Front Dive Angle
+#Library : Suspension: Dive Angle (Caster Change)
+#DataSet : Front Strut - Front Dive Angle
+#Category: 20230503
+#FileID  : Dive152
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:55
+#VehCode Dive table
+
+ENTRY_NOTEFILE Suspensions\Dive\Dive152_note.txt
+NOTE:  Sign convention of the CS 7.01b and earlier datasets was reversed and demonstrated a pro-dive suspension.  This dataset represents an anti-dive suspension.
+EXIT_NOTEFILE Suspensions\Dive\Dive152_note.txt
+
+EXIT_PARSFILE Suspensions\Dive\Dive152.par
+
+#BlueLink0 Suspension: Dive Angle (Caster Change)`Front Strut - Front Dive Angle` 20230503` , Left wheel dive (caster change)
+
+
+ENTER_PARSFILE Suspensions\Longitudinal\SusX154.par`02-03-2010`09:58:54
+#FullDataName Suspension: Longitudinal Position`Front Strut -  Longitudinal Movement`20230503
+#RingCtrl0 SPLINE
+
+#DiagramOne0
+SUSP_X_TABLE SPLINE
+-70, -0.779336
+-60, -0.596671
+-50, -0.438583
+-40, -0.304523
+-30, -0.194019
+-20, -0.106665
+-10, -0.042102
+0, 0
+10, 0.019968
+20, 0.018152
+30, -0.005034
+40, -0.049059
+50, -0.113201
+60, -0.196434
+70, -0.297272
+ENDTABLE
+#RadioCtrl0 0
+
+SUSP_X_AXLE_TABLE SPLINE
+-70, -0.779336
+-60, -0.596671
+-50, -0.438583
+-40, -0.304523
+-30, -0.194019
+-20, -0.106665
+-10, -0.042102
+0, 0
+10, 0.019968
+20, 0.018152
+30, -0.005034
+40, -0.049059
+50, -0.113201
+60, -0.196434
+70, -0.297272
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Longitudinal Position; { 20230503 } Front Strut -  Longitudinal Movement
+#Library : Suspension: Longitudinal Position
+#DataSet : Front Strut -  Longitudinal Movement
+#Category: 20230503
+#FileID  : SusX154
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:54
+#VehCode Longitudinal Movement
+
+EXIT_PARSFILE Suspensions\Longitudinal\SusX154.par
+
+#BlueLink1 Suspension: Longitudinal Position`Front Strut -  Longitudinal Movement` 20230503` , Left wheel X
+
+
+ENTER_PARSFILE Suspensions\Camber\Camber149.par`02-03-2010`09:58:55
+#FullDataName Suspension: Camber Angle`Front Strut - Camber`20230503
+#RingCtrl0 SPLINE
+#RadioCtrl0 0
+
+
+#DiagramOne0
+CAMBER_TABLE SPLINE
+-70, 1.16282
+-60, 0.958695
+-50, 0.76676
+-40, 0.58725
+-30, 0.42045
+-20, 0.266701
+-10, 0.126399
+0, 0
+10, -0.111976
+20, -0.208942
+30, -0.290231
+40, -0.355097
+50, -0.402697
+60, -0.432083
+70, -0.442184
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Camber Angle; { 20230503 } Front Strut - Camber
+#Library : Suspension: Camber Angle
+#DataSet : Front Strut - Camber
+#Category: 20230503
+#FileID  : Camber149
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:55
+#VehCode Camber
+
+EXIT_PARSFILE Suspensions\Camber\Camber149.par
+
+#BlueLink2 Suspension: Camber Angle`Front Strut - Camber` 20230503` , Left wheel camber
+
+
+ENTER_PARSFILE Suspensions\Lateral\SusLat151.par`02-03-2010`09:58:54
+#FullDataName Suspension: Lateral Position`Front Strut - Lateral Movement`20230503
+#RingCtrl0 SPLINE
+#DiagramOne0
+SUSP_LAT_TABLE SPLINE
+-70, 2.81522
+-60, 1.82386
+-50, 1.03219
+-40, 0.437944
+-30, 0.039162
+-20, -0.165848
+-10, -0.178513
+0, 0
+10, 0.368777
+20, 0.927155
+30, 1.67473
+40, 2.61133
+50, 3.73709
+60, 5.05237
+70, 6.55783
+ENDTABLE
+SUSP_LAT_AXLE_JOUNCE_TABLE SPLINE
+-70, 2.81522
+-60, 1.82386
+-50, 1.03219
+-40, 0.437944
+-30, 0.039162
+-20, -0.165848
+-10, -0.178513
+0, 0
+10, 0.368777
+20, 0.927155
+30, 1.67473
+40, 2.61133
+50, 3.73709
+60, 5.05237
+70, 6.55783
+ENDTABLE
+#RadioCtrl0 0
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Lateral Position; { 20230503 } Front Strut - Lateral Movement
+#Library : Suspension: Lateral Position
+#DataSet : Front Strut - Lateral Movement
+#Category: 20230503
+#FileID  : SusLat151
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:54
+#VehCode Lateral Movement
+
+EXIT_PARSFILE Suspensions\Lateral\SusLat151.par
+
+#BlueLink3 Suspension: Lateral Position`Front Strut - Lateral Movement` 20230503` , Left wheel lateral (-Y)
+
+
+ENTER_PARSFILE Suspensions\Toe\Toe150.par`02-03-2010`09:58:54
+#FullDataName Suspension: Toe Angle`Front Strut - Toe Change`20230503
+#RingCtrl0 SPLINE
+#RadioCtrl0 0
+
+
+#DiagramOne0
+TOE_TABLE SPLINE
+-70, -0.932437
+-60, -0.740516
+-50, -0.56874
+-40, -0.416666
+-30, -0.283952
+-20, -0.170354
+-10, -0.075723
+0, 0
+10, 0.056776
+20, 0.09447
+30, 0.112841
+40, 0.11153
+50, 0.090047
+60, 0.047744
+70, -0.016224
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Toe Angle; { 20230503 } Front Strut - Toe Change
+#Library : Suspension: Toe Angle
+#DataSet : Front Strut - Toe Change
+#Category: 20230503
+#FileID  : Toe150
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:54
+#VehCode Toe
+
+EXIT_PARSFILE Suspensions\Toe\Toe150.par
+
+#BlueLink4 Suspension: Toe Angle`Front Strut - Toe Change` 20230503` , Left wheel toe
+
+IW 0.9
+JNC_DESIGN 0
+A_TOE 0
+A_CAMBER 0
+
+iside 2
+#BlueLink5 Suspension: Dive Angle (Caster Change)`Front Strut - Front Dive Angle` 20230503` , Right wheel dive (caster change)
+
+#BlueLink6 Suspension: Longitudinal Position`Front Strut -  Longitudinal Movement` 20230503` , Right wheel X
+
+#BlueLink7 Suspension: Camber Angle`Front Strut - Camber` 20230503` , Right wheel camber
+
+#BlueLink8 Suspension: Lateral Position`Front Strut - Lateral Movement` 20230503` , Right wheel lateral (+Y)
+
+#BlueLink9 Suspension: Toe Angle`Front Strut - Toe Change` 20230503` , Right wheel toe
+
+IW 0.9
+JNC_DESIGN 0
+A_TOE 0
+A_CAMBER 0
+
+LOG_ENTRY Used Dataset: Suspension: Independent System Kinematics; { 20230503 } C-Class, Hatchback - Front Suspension
+#Library : Suspension: Independent System Kinematics
+#DataSet : C-Class, Hatchback - Front Suspension
+#Category: 20230503
+#FileID  : IndKin173
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:59:00
+#VehCode Independent
+
+ENTRY_NOTEFILE Suspensions\Kin_Indy\IndKin173_note.txt
+Generic front strut type suspension geometry created with SuspensionSim.
+EXIT_NOTEFILE Suspensions\Kin_Indy\IndKin173_note.txt
+
+EXIT_PARSFILE Suspensions\Kin_Indy\IndKin173.par
+
+#BlueLink19 Suspension: Independent System Kinematics`C-Class, Hatchback - Front Suspension` 20230503` , Front kinematics
+
+
+* LF tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push <<tire>> L<<axle>>
+
+ENTER_PARSFILE Tires\Tire\Tire177.par`03-05-2010`10:19:56
+#FullDataName Tire`205/55 R16`20230503
+X_LENGTH 316
+Z_LENGTH 316
+Y_LENGTH 205
+#CheckBox1 1
+#CheckBox2 0
+#CheckBox4 1
+
+#RingCtrl0 1
+OPT_TIRE_MODEL 1
+
+
+ENTER_PARSFILE Animator\STL_Groups\StlGroup294.par`02-03-2010`10:00:46
+#FullDataName Animator: Shape Assembly`Sports Car`20230503
+*X_REF_LENGTH 291
+*Y_REF_LENGTH 195
+*Z_REF_LENGTH 291
+#CheckBox0 0
+#CheckBox2 0
+#CheckBox3 0
+#CheckBox4 0
+#CheckBox5 1
+
+#RingCtrl0 3
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE DEFAULT
+
+ENTER_PARSFILE Animator\STL\AniSTL998.par`02-03-2010`10:01:05
+#FullDataName Animator: Shape File Link`Sports Car Tire`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\tires\195_45R16\tire.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 0.3
+SMOOTH_MAX_ANGLE 40
+#RingCtrl0 0
+#CheckBox0 0
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox2 1
+mtl_ns_old on
+#CheckBox3 0
+
+show_front on
+show_back on
+SET_SPECULAR 0.3 0.3 0.3
+
+
+ENTER_PARSFILE Animator\Cameras\Camera288.par`02-03-2010`10:01:14
+#FullDataName Animator: Camera Setup`Shape Preview (Top)`20230503
+#RingCtrl1 0
+
+#CheckBox0 0
+#CheckBox1 0
+
+GHOST_COUNT 0
+SET_CAMERA_Reference_Frame 20230503 Fixed
+
+ENTER_PARSFILE Animator\Frames\Frame370.par`02-03-2010`10:01:08
+#FullDataName Animator: Reference Frame`Fixed`20230503
+ADD_REFERENCE_FRAME 20230503 Fixed
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { 20230503 } Fixed
+#Library : Animator: Reference Frame
+#DataSet : Fixed
+#Category: 20230503
+#FileID  : Frame370
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:08
+#VehCode Reference frame
+
+EXIT_PARSFILE Animator\Frames\Frame370.par
+
+#BlueLink0 Animator: Reference Frame`Fixed` 20230503` , Reference frame for outside camera
+
+SET_LOOKPOINT_Reference_Frame 20230503 Fixed
+SET_LOOKPOINT_X -1.2
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0
+SET_AZIMUTH 180
+SET_ELEVATION 90
+SET_DISTANCE 35
+*SET_LOOKPOINT_X -1.2
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 0
+*SET_AZIMUTH 180
+*SET_ELEVATION 90
+*SET_DISTANCE 35
+GHOST_COUNT 0
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 21.1
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { 20230503 } Shape Preview (Top)
+#Library : Animator: Camera Setup
+#DataSet : Shape Preview (Top)
+#Category: 20230503
+#FileID  : Camera288
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:14
+#VehCode Camera
+
+EXIT_PARSFILE Animator\Cameras\Camera288.par
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Sports Car Tire
+#Library : Animator: Shape File Link
+#DataSet : Sports Car Tire
+#Category: 20230503
+#FileID  : AniSTL998
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:05
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL998.par
+
+#BlueLink0 Animator: Shape File Link`Sports Car Tire` 20230503` , Shape File
+
+
+ENTER_PARSFILE Animator\STL\AniSTL999.par`02-03-2010`10:01:05
+#FullDataName Animator: Shape File Link`Sports Car Wheel`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\tires\195_45R16\wheel.obj
+#ENDMYellow
+
+SET_COLOR .62 .62 .62
+*SPECULAR 0.5
+SMOOTH_MAX_ANGLE 40
+#RingCtrl0 0
+#CheckBox0 0
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox2 1
+mtl_ns_old on
+#CheckBox3 0
+
+show_front on
+show_back on
+SET_SPECULAR 0.5 0.5 0.5
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Sports Car Wheel
+#Library : Animator: Shape File Link
+#DataSet : Sports Car Wheel
+#Category: 20230503
+#FileID  : AniSTL999
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:05
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL999.par
+
+#BlueLink1 Animator: Shape File Link`Sports Car Wheel` 20230503` , Shape File
+
+
+ENTER_PARSFILE Animator\STL\AniSTL1000.par`02-03-2010`10:01:05
+#FullDataName Animator: Shape File Link`Sports Car Stripe`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\tires\195_45R16\stripe.obj
+#ENDMYellow
+
+SET_COLOR white
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.01
+SET_OFFSET_Z 0.01
+*SPECULAR 0
+SMOOTH_MAX_ANGLE 40
+#RingCtrl0 0
+#CheckBox0 0
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox2 1
+mtl_ns_old on
+#CheckBox3 0
+
+show_front on
+show_back on
+SET_SPECULAR 0 0 0
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Sports Car Stripe
+#Library : Animator: Shape File Link
+#DataSet : Sports Car Stripe
+#Category: 20230503
+#FileID  : AniSTL1000
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:05
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1000.par
+
+#BlueLink2 Animator: Shape File Link`Sports Car Stripe` 20230503` , Shape File
+
+x_ref_length 291
+y_ref_length 195
+z_ref_length 291
+
+
+ENTER_PARSFILE Animator\Cameras\Camera289.par`02-03-2010`10:01:14
+#FullDataName Animator: Camera Setup`Shape Preview (Side)`20230503
+#RingCtrl1 0
+
+#CheckBox0 1
+#CheckBox1 0
+
+GHOST_COUNT 0
+ADD_GRID
+SET_CAMERA_Reference_Frame 20230503 Yaw for Shape Preview
+
+ENTER_PARSFILE Animator\Frames\Frame371.par`02-03-2010`10:01:10
+#FullDataName Animator: Reference Frame`Yaw for Shape Preview`20230503
+ADD_REFERENCE_FRAME 20230503 Yaw for Shape Preview
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME Yaw
+
+WRT_Yaw
+ANI_Yaw
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { 20230503 } Yaw for Shape Preview
+#Library : Animator: Reference Frame
+#DataSet : Yaw for Shape Preview
+#Category: 20230503
+#FileID  : Frame371
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:10
+#VehCode Reference frame
+
+EXIT_PARSFILE Animator\Frames\Frame371.par
+
+#BlueLink0 Animator: Reference Frame`Yaw for Shape Preview` 20230503` , Reference frame for outside camera
+
+SET_LOOKPOINT_Reference_Frame 20230503 Yaw for Shape Preview
+SET_LOOKPOINT_X 0
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0
+SET_AZIMUTH 0
+SET_ELEVATION 0
+SET_DISTANCE 35
+*SET_LOOKPOINT_X 0
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 0
+*SET_AZIMUTH 0
+*SET_ELEVATION 0
+*SET_DISTANCE 35
+GHOST_COUNT 0
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 21.1
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { 20230503 } Shape Preview (Side)
+#Library : Animator: Camera Setup
+#DataSet : Shape Preview (Side)
+#Category: 20230503
+#FileID  : Camera289
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:14
+#VehCode Camera
+
+EXIT_PARSFILE Animator\Cameras\Camera289.par
+
+#BlueLink17 Animator: Camera Setup`Shape Preview (Side)` 20230503` , Animator camera
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { 20230503 } Sports Car
+#Library : Animator: Shape Assembly
+#DataSet : Sports Car
+#Category: 20230503
+#FileID  : StlGroup294
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:46
+#VehCode Shape Group
+
+EXIT_PARSFILE Animator\STL_Groups\StlGroup294.par
+
+#BlueLink4 Animator: Shape Assembly`Sports Car` 20230503` , Animator
+
+WRITE_WHEEL_OFFSET
+SET_NUM_POINTS 12
+SET_THICKNESS_SGUI 205
+
+ENTER_PARSFILE Animator\Sound\Set\SndSet148.par`02-03-2010`10:00:39
+#FullDataName Animator: Sound Set`Tire Sounds`20230503
+
+
+ENTER_PARSFILE Animator\Sound\Sample\SndSmp218.par`02-03-2010`10:00:39
+#FullDataName Animator: Sound Sample`Lateral Tire Sound`20230503
+
+ADD_3D_SOUND Animator\Audio\Tire\Generic-Tire-01_Skid-01.wav
+#CheckBox0 1
+LOOP_SOUND on
+
+#RingCtrl0 Default
+SOUND_AUTO_START Default
+
+SOUND_VOL_MULT 2.0
+SOUND_VOL_MIN 0.0
+SOUND_VOL_MAX 1.0
+SOUND_FREQ_MULT 1.0
+SOUND_FREQ_MIN 0.01
+SOUND_FREQ_MAX 1.0
+
+
+ENTER_PARSFILE Animator\Sound\Modifier\SndMod382.par`02-03-2010`10:00:40
+#FullDataName Animator: Sound Modifier`Tire Skid - Freq`20230503
+
+#MiscYellow0
+define_output mod1_<<tire>> = abs(alpha_<<tire>>); units = deg;
+#ENDMYellow
+
+
+#RingCtrl0 FREQUENCY
+ADD_SOUND_MODIFIER FREQUENCY
+SOUNDMOD_OPERATION mult
+
+SOUNDMOD_INPUT_NAME mod1_<<tire>>
+SOUNDMOD_INPUT_MIN 0.0
+SOUNDMOD_INPUT_LOW 5.0
+SOUNDMOD_INPUT_HIGH 10.0
+SOUNDMOD_INPUT_MAX 180.0
+SOUNDMOD_OUTPUT_MIN 0.75
+SOUNDMOD_OUTPUT_LOW 0.9
+SOUNDMOD_OUTPUT_HIGH 0.7
+SOUNDMOD_OUTPUT_MAX 0.5
+
+WRT_mod1_<<tire>>
+ANI_mod1_<<tire>>
+
+LOG_ENTRY Used Dataset: Animator: Sound Modifier; { 20230503 } Tire Skid - Freq
+#Library : Animator: Sound Modifier
+#DataSet : Tire Skid - Freq
+#Category: 20230503
+#FileID  : SndMod382
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:40
+#VehCode Sound Modifier
+
+EXIT_PARSFILE Animator\Sound\Modifier\SndMod382.par
+
+#BlueLink0 Animator: Sound Modifier`Tire Skid - Freq` 20230503` , Playback modification 1
+
+
+ENTER_PARSFILE Animator\Sound\Modifier\SndMod383.par`02-03-2010`10:00:40
+#FullDataName Animator: Sound Modifier`Tire Skid - Volume (Force)`20230503
+
+
+#RingCtrl0 VOLUME
+ADD_SOUND_MODIFIER VOLUME
+SOUNDMOD_OPERATION mult
+
+SOUNDMOD_INPUT_NAME FZ_<<tire>>
+SOUNDMOD_INPUT_MIN 0.0
+SOUNDMOD_INPUT_LOW 2000.0
+SOUNDMOD_INPUT_HIGH 4000.0
+SOUNDMOD_INPUT_MAX 8000.0
+SOUNDMOD_OUTPUT_MIN 0.0
+SOUNDMOD_OUTPUT_LOW 0.333
+SOUNDMOD_OUTPUT_HIGH 0.6667
+SOUNDMOD_OUTPUT_MAX 1.0
+
+WRT_FZ_<<tire>>
+ANI_FZ_<<tire>>
+
+LOG_ENTRY Used Dataset: Animator: Sound Modifier; { 20230503 } Tire Skid - Volume (Force)
+#Library : Animator: Sound Modifier
+#DataSet : Tire Skid - Volume (Force)
+#Category: 20230503
+#FileID  : SndMod383
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:40
+#VehCode Sound Modifier
+
+EXIT_PARSFILE Animator\Sound\Modifier\SndMod383.par
+
+#BlueLink1 Animator: Sound Modifier`Tire Skid - Volume (Force)` 20230503` , Playback modification 2
+
+
+ENTER_PARSFILE Animator\Sound\Modifier\SndMod384.par`02-03-2010`10:00:40
+#FullDataName Animator: Sound Modifier`Tire Skid - Volume (Slip)`20230503
+
+#MiscYellow0
+define_output mod2_<<tire>> = abs(VyTC_<<tire>>); units = km/h;
+#ENDMYellow
+
+
+#RingCtrl0 VOLUME
+ADD_SOUND_MODIFIER VOLUME
+SOUNDMOD_OPERATION mult
+
+SOUNDMOD_INPUT_NAME mod2_<<tire>>
+SOUNDMOD_INPUT_MIN 7.5
+SOUNDMOD_INPUT_LOW 50.0
+SOUNDMOD_INPUT_HIGH 75.0
+SOUNDMOD_INPUT_MAX 100.0
+SOUNDMOD_OUTPUT_MIN 0.0
+SOUNDMOD_OUTPUT_LOW 0.333
+SOUNDMOD_OUTPUT_HIGH 0.666
+SOUNDMOD_OUTPUT_MAX 1.00
+
+WRT_mod2_<<tire>>
+ANI_mod2_<<tire>>
+
+LOG_ENTRY Used Dataset: Animator: Sound Modifier; { 20230503 } Tire Skid - Volume (Slip)
+#Library : Animator: Sound Modifier
+#DataSet : Tire Skid - Volume (Slip)
+#Category: 20230503
+#FileID  : SndMod384
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:40
+#VehCode Sound Modifier
+
+EXIT_PARSFILE Animator\Sound\Modifier\SndMod384.par
+
+#BlueLink2 Animator: Sound Modifier`Tire Skid - Volume (Slip)` 20230503` , Playback modification 3
+
+
+LOG_ENTRY Used Dataset: Animator: Sound Sample; { 20230503 } Lateral Tire Sound
+#Library : Animator: Sound Sample
+#DataSet : Lateral Tire Sound
+#Category: 20230503
+#FileID  : SndSmp218
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:39
+#VehCode Sound Sample
+
+EXIT_PARSFILE Animator\Sound\Sample\SndSmp218.par
+
+#BlueLink0 Animator: Sound Sample`Lateral Tire Sound` 20230503` , Sample 1
+
+
+
+ENTER_PARSFILE Animator\Sound\Sample\SndSmp219.par`02-03-2010`10:00:40
+#FullDataName Animator: Sound Sample`Longitudinal Tire Sound`20230503
+
+ADD_3D_SOUND Animator\Audio\Tire\Generic-Tire-01_Skid-01.wav
+#CheckBox0 1
+LOOP_SOUND on
+
+#RingCtrl0 Default
+SOUND_AUTO_START Default
+
+SOUND_VOL_MULT 0.70
+SOUND_VOL_MIN 0.0
+SOUND_VOL_MAX 1.0
+SOUND_FREQ_MULT 1.0
+SOUND_FREQ_MIN 0.01
+SOUND_FREQ_MAX 1.0
+
+#MiscYellow0
+DEFINE_OUTPUT VXSLIP<<tire>> = VxCen<<tire>> - Vx_<<tire>>
+#ENDMYellow
+
+
+ENTER_PARSFILE Animator\Sound\Modifier\SndMod385.par`02-03-2010`10:00:40
+#FullDataName Animator: Sound Modifier`Tire Slip - Freq`20230503
+
+#MiscYellow0
+define_output mod3_<<tire>> = abs(VXSLIP<<tire>>);
+#ENDMYellow
+
+
+#RingCtrl0 FREQUENCY
+ADD_SOUND_MODIFIER FREQUENCY
+SOUNDMOD_OPERATION mult
+
+SOUNDMOD_INPUT_NAME mod3_<<tire>>
+SOUNDMOD_INPUT_MIN 1.1
+SOUNDMOD_INPUT_LOW 5.0
+SOUNDMOD_INPUT_HIGH 10.0
+SOUNDMOD_INPUT_MAX 30.0
+SOUNDMOD_OUTPUT_MIN 1.0
+SOUNDMOD_OUTPUT_LOW 1.0
+SOUNDMOD_OUTPUT_HIGH 1.0
+SOUNDMOD_OUTPUT_MAX 1.0
+
+WRT_mod3_<<tire>>
+ANI_mod3_<<tire>>
+
+LOG_ENTRY Used Dataset: Animator: Sound Modifier; { 20230503 } Tire Slip - Freq
+#Library : Animator: Sound Modifier
+#DataSet : Tire Slip - Freq
+#Category: 20230503
+#FileID  : SndMod385
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:40
+#VehCode Sound Modifier
+
+EXIT_PARSFILE Animator\Sound\Modifier\SndMod385.par
+
+#BlueLink0 Animator: Sound Modifier`Tire Slip - Freq` 20230503` , Playback modification 1
+
+
+ENTER_PARSFILE Animator\Sound\Modifier\SndMod386.par`02-03-2010`10:00:40
+#FullDataName Animator: Sound Modifier`Tire Slip - Volume (Force)`20230503
+
+
+#RingCtrl0 VOLUME
+ADD_SOUND_MODIFIER VOLUME
+SOUNDMOD_OPERATION mult
+
+SOUNDMOD_INPUT_NAME FZ_<<tire>>
+SOUNDMOD_INPUT_MIN 0.0
+SOUNDMOD_INPUT_LOW 1333.0
+SOUNDMOD_INPUT_HIGH 2666.0
+SOUNDMOD_INPUT_MAX 4000.0
+SOUNDMOD_OUTPUT_MIN 0.0
+SOUNDMOD_OUTPUT_LOW 0.333
+SOUNDMOD_OUTPUT_HIGH 0.666
+SOUNDMOD_OUTPUT_MAX 1.0
+
+WRT_FZ_<<tire>>
+ANI_FZ_<<tire>>
+
+LOG_ENTRY Used Dataset: Animator: Sound Modifier; { 20230503 } Tire Slip - Volume (Force)
+#Library : Animator: Sound Modifier
+#DataSet : Tire Slip - Volume (Force)
+#Category: 20230503
+#FileID  : SndMod386
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:40
+#VehCode Sound Modifier
+
+EXIT_PARSFILE Animator\Sound\Modifier\SndMod386.par
+
+#BlueLink1 Animator: Sound Modifier`Tire Slip - Volume (Force)` 20230503` , Playback modification 2
+
+
+ENTER_PARSFILE Animator\Sound\Modifier\SndMod387.par`02-03-2010`10:00:40
+#FullDataName Animator: Sound Modifier`Tire Slip - Volume (Slip)`20230503
+
+#MiscYellow0
+define_output mod4_<<tire>> = abs(VXSLIP<<tire>>);
+#ENDMYellow
+
+
+#RingCtrl0 VOLUME
+ADD_SOUND_MODIFIER VOLUME
+SOUNDMOD_OPERATION mult
+
+SOUNDMOD_INPUT_NAME mod4_<<tire>>
+SOUNDMOD_INPUT_MIN 5.2
+SOUNDMOD_INPUT_LOW 20.0
+SOUNDMOD_INPUT_HIGH 40.0
+SOUNDMOD_INPUT_MAX 80.0
+SOUNDMOD_OUTPUT_MIN 0.0
+SOUNDMOD_OUTPUT_LOW 0.8
+SOUNDMOD_OUTPUT_HIGH 0.9
+SOUNDMOD_OUTPUT_MAX 1.00
+
+WRT_mod4_<<tire>>
+ANI_mod4_<<tire>>
+
+LOG_ENTRY Used Dataset: Animator: Sound Modifier; { 20230503 } Tire Slip - Volume (Slip)
+#Library : Animator: Sound Modifier
+#DataSet : Tire Slip - Volume (Slip)
+#Category: 20230503
+#FileID  : SndMod387
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:40
+#VehCode Sound Modifier
+
+EXIT_PARSFILE Animator\Sound\Modifier\SndMod387.par
+
+#BlueLink2 Animator: Sound Modifier`Tire Slip - Volume (Slip)` 20230503` , Playback modification 3
+
+
+LOG_ENTRY Used Dataset: Animator: Sound Sample; { 20230503 } Longitudinal Tire Sound
+#Library : Animator: Sound Sample
+#DataSet : Longitudinal Tire Sound
+#Category: 20230503
+#FileID  : SndSmp219
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:40
+#VehCode Sound Sample
+
+EXIT_PARSFILE Animator\Sound\Sample\SndSmp219.par
+
+#BlueLink1 Animator: Sound Sample`Longitudinal Tire Sound` 20230503` , Sample 2
+
+
+
+
+
+
+
+
+
+
+
+
+LOG_ENTRY Used Dataset: Animator: Sound Set; { 20230503 } Tire Sounds
+#Library : Animator: Sound Set
+#DataSet : Tire Sounds
+#Category: 20230503
+#FileID  : SndSet148
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:39
+#VehCode Sound Set
+
+EXIT_PARSFILE Animator\Sound\Set\SndSet148.par
+
+#BlueLink13 Animator: Sound Set`Tire Sounds` 20230503` , Animator
+
+RRE 310
+R0 316
+FZ_TIRE_COEFFICIENT 228
+FZ_MAX 100000
+IT 0
+L_RELAX_X 55
+L_RELAX_Y 565
+VLOW_ALPHA 5
+RR_C 0.004
+RR_V 0.000025
+RR_FX 1
+
+ENTER_PARSFILE Tires\Mz\TireMz130.par`02-03-2010`09:58:51
+#FullDataName Tire: Aligning Moment`Car Mz`20230503
+#RadioCtrl0 0
+
+*3D_XLabel Vertical load (N)
+*3D_YLabel Slip angle [Alpha] (deg)
+*3D_ZLabel Aligning moment (N-m)
+
+#DiagramTwo0
+*3D_DATA 5, 21 ! columns x rows
+MZ_TIRE_CARPET
+0, 1715.32, 3430.65, 5145.97, 6861.29, 8576.62
+0.5, 4.32126, 17.9612, 38.2152, 63.1602, 91.1374
+1, 7.6705, 31.9816, 68.221, 113.103, 163.891
+1.5, 9.27645, 39.0393, 83.7311, 139.76, 204.209
+2, 9.32928, 39.8951, 86.309, 145.528, 215.281
+2.5, 8.26217, 36.2289, 79.4521, 135.956, 204.652
+3, 6.49774, 29.7417, 66.6362, 116.579, 179.855
+3.5, 4.45861, 22.124, 51.3691, 92.9441, 148.402
+4, 2.5674, 15.0557, 37.1586, 70.5877, 117.826
+4.5, 1.15163, 9.88924, 26.7305, 53.8837, 94.1274
+5, 0.190178, 6.49774, 19.8841, 42.547, 77.1699
+5.5, -0.412052, 4.43748, 15.6263, 35.1406, 65.2838
+6, -0.771277, 3.22246, 12.9955, 30.2171, 56.7892
+6.5, -1.00372, 2.38779, 11.0092, 26.3291, 50.0379
+7, -1.20446, 1.47916, 8.70592, 22.0395, 43.3394
+7.5, -1.45803, 0.158481, 5.4095, 16.3342, 35.521
+8, -1.73273, -1.36294, 1.62708, 10.0055, 27.3222
+8.5, -1.9863, -2.74701, -1.80669, 4.279, 20.0109
+9, -2.15535, -3.65564, -4.09939, 2.64136, 10.576
+9.5, -2.17648, -3.74016, -4.41635, 1.05654, 5.28272
+10, -3.16963, -4.22617, -5.28272, 0, 0
+11, -3.16963, -4.22617, -5.28272, 0, 0
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Tire: Aligning Moment; { 20230503 } Car Mz
+#Library : Tire: Aligning Moment
+#DataSet : Car Mz
+#Category: 20230503
+#FileID  : TireMz130
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:51
+#VehCode Tire: Mz
+
+EXIT_PARSFILE Tires\Mz\TireMz130.par
+
+#BlueLink0 Tire: Aligning Moment`Car Mz` 20230503` , Aligning moment
+
+
+ENTER_PARSFILE Tires\Fy\TireFy130.par`02-03-2010`09:58:51
+#FullDataName Tire: Lateral Force`Car Fy`20230503
+#RadioCtrl0 0
+
+MU_REF_Y 1.0
+
+*3D_XLabel Vertical load (N)
+*3D_YLabel Slip angle [Alpha] (deg)
+*3D_ZLabel Absolute lateral tire force (N)
+
+#DiagramTwo0
+*3D_DATA 5, 25 ! columns x rows
+FY_TIRE_CARPET
+0, 1725, 3500, 6100, 6950, 9005
+0.5, 444.357, 894.186, 1293.54, 1601.93, 1784.39
+1, 843.546, 1694.5, 2452.99, 3047.78, 3417.9
+1.5, 1162.09, 2327.41, 3373.13, 4214.48, 4780.29
+2, 1403.45, 2800.6, 4064.18, 5111.02, 5873.77
+2.5, 1580.72, 3142.1, 4565.24, 5779.43, 6731.16
+3, 1707.08, 3379.93, 4915.41, 6261.69, 7385.32
+3.5, 1795.66, 3542.12, 5153.78, 6599.82, 7869.06
+4, 1859.6, 3656.67, 5319.43, 6835.85, 8215.23
+4.5, 1893.83, 3713.24, 5402.64, 6968.31, 8439.3
+5, 1904.16, 3724.46, 5422.23, 7019.99, 8564.79
+5.5, 1896.19, 3701.92, 5395.45, 7011.91, 8613.61
+6, 1875.03, 3656.45, 5337.38, 6962.7, 8605.54
+6.5, 1845.3, 3597, 5261.2, 6887.9, 8557.9
+7, 1810.95, 3531.15, 5177.14, 6800.2, 8485.17
+7.5, 1775.12, 3464.91, 5092.89, 6709.15, 8398.94
+8, 1740.18, 3402.12, 5013.56, 6621.16, 8308.19
+8.5, 1707.8, 3345.23, 4942.1, 6540.06, 8219.02
+9, 1678.67, 3295.32, 4879.5, 6467.91, 8135.36
+9.5, 1653.27, 3252.61, 4825.96, 6405.21, 8059.17
+10, 1631.62, 3216.48, 4780.78, 6351.47, 7991.56
+12, 1574.53, 3123.37, 4662.96, 6207.67, 7798.93
+14, 1546.58, 3078, 4604.6, 6133.95, 7693.72
+16, 1531.91, 3054.18, 4573.3, 6093.89, 7634.76
+18, 1523.64, 3040.4, 4554.99, 6070.17, 7599.62
+20, 1523.64, 3040.4, 4554.99, 6070.17, 7599.62
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Tire: Lateral Force; { 20230503 } Car Fy
+#Library : Tire: Lateral Force
+#DataSet : Car Fy
+#Category: 20230503
+#FileID  : TireFy130
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:51
+#VehCode Tire: Fy
+
+EXIT_PARSFILE Tires\Fy\TireFy130.par
+
+#BlueLink1 Tire: Lateral Force`Car Fy` 20230503` , Lateral force
+
+
+ENTER_PARSFILE Tires\Fx\TireFx131.par`02-03-2010`09:58:50
+#FullDataName Tire: Longitudinal Force`Car Fx`20230503
+#RadioCtrl0 0
+
+MU_REF_X 1.0
+
+*3D_XLabel Vertical load (N)
+*3D_YLabel Abs. slip ratio [Kappa] (-)
+*3D_ZLabel Absolute longitudinal tire force (N)
+
+#DiagramTwo0
+*3D_DATA 5, 19 ! columns x rows
+FX_TIRE_CARPET
+0, 2105, 3995, 6120, 7900, 10100
+0.02, 926.741, 1853.48, 2780.22, 3706.97, 4633.7
+0.04, 1701.43, 3402.86, 5104.29, 6805.72, 8507.15
+0.06, 2240.07, 4480.13, 6720.21, 8960.27, 11200.3
+0.08, 2548.95, 5097.92, 7646.88, 10195.8, 12744.8
+0.1, 2689.78, 5379.54, 8069.32, 10759.1, 13448.8
+0.12, 2729.82, 5459.63, 8189.45, 10919.3, 13649.1
+0.14, 2717.36, 5434.73, 8152.09, 10869.4, 13586.8
+0.16, 2680.7, 5361.4, 8042.1, 10722.8, 13403.5
+0.18, 2634.75, 5269.5, 7904.24, 10539, 13173.7
+0.2, 2586.89, 5173.78, 7760.68, 10347.6, 12934.4
+0.25, 2476.95, 4953.9, 7430.85, 9907.79, 12384.7
+0.3, 2388.22, 4776.46, 7164.69, 9552.92, 11941.1
+0.4, 2262.94, 4525.87, 6788.82, 9051.76, 11314.7
+0.5, 2181.64, 4363.28, 6544.93, 8726.56, 10908.2
+0.6, 2125.47, 4250.95, 6376.42, 8501.91, 10627.4
+0.7, 2084.58, 4169.16, 6253.75, 8338.33, 10422.9
+0.8, 2053.55, 4107.12, 6160.67, 8214.24, 10267.8
+0.9, 2029.26, 4058.51, 6087.76, 8117.01, 10146.3
+1, 2029.26, 4058.51, 6087.76, 8117.01, 10146.3
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Tire: Longitudinal Force; { 20230503 } Car Fx
+#Library : Tire: Longitudinal Force
+#DataSet : Car Fx
+#Category: 20230503
+#FileID  : TireFx131
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:50
+#VehCode Tire: Fx
+
+EXIT_PARSFILE Tires\Fx\TireFx131.par
+
+#BlueLink2 Tire: Longitudinal Force`Car Fx` 20230503` , Longitudinal force
+
+
+ENTER_PARSFILE Tires\Camber_Thrust\CamStiff130.par`03-05-2010`10:20:04
+#FullDataName Tire: Camber Thrust Coefficient`Car Camber Thrust (8.02)`20230503
+#RingCtrl0 LINEAR
+#RadioCtrl0 0
+
+
+#DiagramOne0
+KGAMMA_TABLE LINEAR
+0, 9.75
+500, 3.82897
+1000, -1.19863
+1500, -5.78424
+2000, -10.0253
+2500, -14.0193
+3000, -17.8638
+3500, -21.6561
+4000, -25.4939
+4500, -29.4744
+5000, -33.6952
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Tire: Camber Thrust Coefficient; { 20230503 } Car Camber Thrust (8.02)
+#Library : Tire: Camber Thrust Coefficient
+#DataSet : Car Camber Thrust (8.02)
+#Category: 20230503
+#FileID  : CamStiff130
+#Product : CarSim Version 8.02, March 2010
+#Last update: 03-05-2010 10:20:04
+#VehCode Camber thrust
+
+EXIT_PARSFILE Tires\Camber_Thrust\CamStiff130.par
+
+#BlueLink3 Tire: Camber Thrust Coefficient`Car Camber Thrust (8.02)` 20230503` , Camber thrust
+
+
+
+LOG_ENTRY Used Dataset: Tire; { 20230503 } 205/55 R16
+#Library : Tire
+#DataSet : 205/55 R16
+#Category: 20230503
+#FileID  : Tire177
+#Product : CarSim Version 8.02, March 2010
+#Last update: 03-05-2010 10:19:56
+#VehCode Tire
+
+ENTRY_NOTEFILE Tires\Tire\Tire177_note.txt
+Example of a tire using the CarSim Internal Tire Model.
+EXIT_NOTEFILE Tires\Tire\Tire177_note.txt
+
+EXIT_PARSFILE Tires\Tire\Tire177.par
+
+#BlueLink9 Tire`205/55 R16` 20230503` , Left-front tire
+
+
+* RF tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push <<tire>> R<<axle>>
+#BlueLink10 Tire`205/55 R16` 20230503` , Right-front tire
+
+* Rear components
+iaxle 2
+symbol_add <<axle>> 1
+
+ENTER_PARSFILE Suspensions\Compliance\SuspCmp186.par`02-03-2010`09:58:59
+#FullDataName Suspension: Independent Compliance, Springs, and Dampers`C-Class, Hatchback - Rear Comp.`20230503
+#RingCtrl0 0
+*OPT_SPR 0
+iside 1
+*R_SPRING_L 0.797
+*R_SPRING_R 0.797
+*R_DAMPER_L 0.797
+*R_DAMPER_R 0.797
+*FS_OFFSET_L 0
+*FS_OFFSET_R 0
+*CT_FX_L 0
+*CT_FX_R 0
+*CS_FY_L -0.10e-4
+*CS_FY_R -0.10e-4
+*CS_MZ_L 0.190e-2
+*CS_MZ_R 0.190e-2
+*CC_FX_L 0
+*CC_FX_R 0
+*CI_FY_L 0.00029
+*CI_FY_R 0.00029
+*CI_MZ_L 0
+*CI_MZ_R 0
+*C_LONG_L 7e-5
+*C_LONG_R 7e-5
+*C_LAT_L 3.8e-5
+*C_LAT_R 3.8e-5
+*L_SPG_ADJ_L 0
+*L_SPG_ADJ_R 0
+DAUX 0
+*R_JOUNCE_L 0.797
+*R_JOUNCE_R 0.797
+*R_REBOUND_L 0.797
+*R_REBOUND_R 0.797
+
+#BlueLink1 Suspension: Shock Absorber`Big Car Damping` 20230503` , Left shock absorber
+
+
+ENTER_PARSFILE Suspensions\Aux_Roll\AuxMx155.par`02-03-2010`09:58:56
+#FullDataName Suspension: Auxiliary Roll Moment`344 N-m/deg (Non-linear)`20230503
+#RingCtrl0 LINEAR
+#RadioCtrl0 0
+
+*SCALAR 344
+
+#DiagramOne0
+MX_AUX_TABLE LINEAR
+-10, -4490.601075
+-9, -3826.866458
+-8, -3245.098966
+-7, -2727.228682
+-6, -2259.329279
+-5, -1830.385769
+-4, -1431.452024
+-3, -1055.055494
+-2, -694.7613699
+-1, -344.8400129
+0, 0
+1, 344.8400129
+2, 694.7613699
+3, 1055.055494
+4, 1431.452024
+5, 1830.385769
+6, 2259.329279
+7, 2727.228682
+8, 3245.098966
+9, 3826.866458
+10, 4490.601075
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Auxiliary Roll Moment; { 20230503 } 344 N-m/deg (Non-linear)
+#Library : Suspension: Auxiliary Roll Moment
+#DataSet : 344 N-m/deg (Non-linear)
+#Category: 20230503
+#FileID  : AuxMx155
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:56
+#VehCode Aux. Roll Moment
+
+EXIT_PARSFILE Suspensions\Aux_Roll\AuxMx155.par
+
+#BlueLink2 Suspension: Auxiliary Roll Moment`344 N-m/deg (Non-linear)` 20230503` , Roll moment
+
+#BlueLink5 Suspension: Jounce and Rebound Stops`+60 mm / -40 mm` 20230503` , Left jounce / rebound stops
+
+CMP_SPR_SEAT_COEFFICIENT 0.797
+CMP_DAMP_COEFFICIENT 0.797
+FS_OFFSET 0
+CT_FX_COEFFICIENT 0
+CS_FY_COEFFICIENT -0.10e-4
+CS_MZ_COEFFICIENT 0.190e-2
+CC_FX_COEFFICIENT 0
+CI_FY_COEFFICIENT 0.00029
+CI_MZ_COEFFICIENT 0
+C_LONG_COEFFICIENT 7e-5
+C_LAT_COEFFICIENT 3.8e-5
+L_SPG_ADJ 0
+CMP_JSTOP_COEFFICIENT 0.797
+CMP_RSTOP_COEFFICIENT 0.797
+
+ENTER_PARSFILE Suspensions\Springs\Spring178.par`02-03-2010`09:58:57
+#FullDataName Suspension: Spring`30 N/mm`20230503
+#RingCtrl0 LINEAR
+#DiagramOne0
+FS_COMP_TABLE LINEAR
+-50, 1560.7
+-45, 1713.58
+-40, 1866.45
+-35, 2019.33
+-30, 2172.21
+-25, 2325.09
+-20, 2477.96
+-15, 2630.84
+-10, 2783.72
+-5, 2936.6
+0, 3089.47
+5, 3242.35
+10, 3395.23
+15, 3548.1
+20, 3700.98
+25, 3853.86
+30, 4006.74
+35, 4159.61
+40, 4312.49
+45, 4465.37
+50, 4618.25
+ENDTABLE
+#DiagramOne1
+FS_EXT_TABLE LINEAR
+-50, 1520.7
+-45, 1673.58
+-40, 1826.45
+-35, 1979.33
+-30, 2132.21
+-25, 2285.09
+-20, 2437.96
+-15, 2590.84
+-10, 2743.72
+-5, 2896.6
+0, 3049.47
+5, 3202.35
+10, 3355.23
+15, 3508.1
+20, 3660.98
+25, 3813.86
+30, 3966.74
+35, 4119.61
+40, 4272.49
+45, 4425.37
+50, 4578.25
+ENDTABLE
+#RadioCtrl0 0
+#RadioCtrl1 0
+
+SPRING_COMP_BETA 2
+SPRING_EXT_BETA 2
+
+
+LOG_ENTRY Used Dataset: Suspension: Spring; { 20230503 } 30 N/mm
+#Library : Suspension: Spring
+#DataSet : 30 N/mm
+#Category: 20230503
+#FileID  : Spring178
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:57
+#VehCode Spring Alone
+
+EXIT_PARSFILE Suspensions\Springs\Spring178.par
+
+#BlueLink0 Suspension: Spring`30 N/mm` 20230503` , Left
+
+OPT_EXT_SP 0
+FS_OFFSET 0
+CMP_OFFSET 0
+
+iside 2
+#BlueLink4 Suspension: Shock Absorber`Big Car Damping` 20230503` , Right shock absorber
+
+#BlueLink6 Suspension: Jounce and Rebound Stops`+60 mm / -40 mm` 20230503` , Right jounce / rebound stops
+
+CMP_SPR_SEAT_COEFFICIENT 0.797
+CMP_DAMP_COEFFICIENT 0.797
+FS_OFFSET 0
+CT_FX_COEFFICIENT 0
+CS_FY_COEFFICIENT -0.10e-4
+CS_MZ_COEFFICIENT 0.190e-2
+CC_FX_COEFFICIENT 0
+CI_FY_COEFFICIENT 0.00029
+CI_MZ_COEFFICIENT 0
+C_LONG_COEFFICIENT 7e-5
+C_LAT_COEFFICIENT 3.8e-5
+L_SPG_ADJ 0
+CMP_JSTOP_COEFFICIENT 0.797
+CMP_RSTOP_COEFFICIENT 0.797
+#BlueLink3 Suspension: Spring`30 N/mm` 20230503` , Right
+
+OPT_EXT_SP 0
+FS_OFFSET 0
+CMP_OFFSET 0
+
+LOG_ENTRY Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { 20230503 } C-Class, Hatchback - Rear Comp.
+#Library : Suspension: Independent Compliance, Springs, and Dampers
+#DataSet : C-Class, Hatchback - Rear Comp.
+#Category: 20230503
+#FileID  : SuspCmp186
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:59
+#VehCode Independent
+
+EXIT_PARSFILE Suspensions\Compliance\SuspCmp186.par
+
+#BlueLink17 Suspension: Independent Compliance, Springs, and Dampers`C-Class, Hatchback - Rear Comp.` 20230503` , Rear compliance
+
+
+ENTER_PARSFILE Suspensions\Kin_Indy\IndKin174.par`02-03-2010`09:59:00
+#FullDataName Suspension: Independent System Kinematics`C-Class, Hatchback - Rear Suspension`20230503
+iside 1
+L_TRACK 1539
+Y_CL_SUSP 0
+M_US 71
+*IW_L 0.9
+*JNC_DESIGN_L 0
+*IW_R 0.9
+*JNC_DESIGN_R 0
+*TOE_L 0
+*TOE_R 0
+*CAMBER_L 0
+*CAMBER_R 0
+R_US_STR 0.1
+
+#RingCtrl0 1
+OPT_JNC_DESIGN 1
+#CheckBox0 0
+
+
+ENTER_PARSFILE Suspensions\Dive\Dive153.par`02-03-2010`09:58:54
+#FullDataName Suspension: Dive Angle (Caster Change)`Rear 5-Link - Dive Angle`20230503
+#RingCtrl0 SPLINE
+*SCALAR 0
+
+#DiagramOne0
+SUSP_DIVE_TABLE SPLINE
+-70, 0
+-60, 0
+-50, 0
+-40, 0
+-30, 0
+-20, 0
+-10, 0
+0, 0
+10, 0
+20, 0
+30, 0
+40, 0
+50, 0
+60, 0
+70, 0
+ENDTABLE
+#RadioCtrl0 0
+
+SUSP_DIVE_AXLE_TABLE SPLINE
+-70, 0
+-60, 0
+-50, 0
+-40, 0
+-30, 0
+-20, 0
+-10, 0
+0, 0
+10, 0
+20, 0
+30, 0
+40, 0
+50, 0
+60, 0
+70, 0
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Dive Angle (Caster Change); { 20230503 } Rear 5-Link - Dive Angle
+#Library : Suspension: Dive Angle (Caster Change)
+#DataSet : Rear 5-Link - Dive Angle
+#Category: 20230503
+#FileID  : Dive153
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:54
+#VehCode Dive table
+
+EXIT_PARSFILE Suspensions\Dive\Dive153.par
+
+#BlueLink0 Suspension: Dive Angle (Caster Change)`Rear 5-Link - Dive Angle` 20230503` , Left wheel dive (caster change)
+
+
+ENTER_PARSFILE Suspensions\Longitudinal\SusX155.par`02-03-2010`09:58:54
+#FullDataName Suspension: Longitudinal Position`Rear 5-Link - Longitudinal Movement`20230503
+#RingCtrl0 SPLINE
+
+#DiagramOne0
+SUSP_X_TABLE SPLINE
+-70, 2.6892
+-60, 1.76827
+-50, 1.01123
+-40, 0.426265
+-30, 0.022328
+-20, -0.190752
+-10, -0.202151
+0, 0
+10, 0.428603
+20, 1.09748
+30, 2.02114
+40, 3.21439
+50, 4.69179
+60, 6.46687
+70, 8.5513
+ENDTABLE
+#RadioCtrl0 0
+
+SUSP_X_AXLE_TABLE SPLINE
+-70, 2.6892
+-60, 1.76827
+-50, 1.01123
+-40, 0.426265
+-30, 0.022328
+-20, -0.190752
+-10, -0.202151
+0, 0
+10, 0.428603
+20, 1.09748
+30, 2.02114
+40, 3.21439
+50, 4.69179
+60, 6.46687
+70, 8.5513
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Longitudinal Position; { 20230503 } Rear 5-Link - Longitudinal Movement
+#Library : Suspension: Longitudinal Position
+#DataSet : Rear 5-Link - Longitudinal Movement
+#Category: 20230503
+#FileID  : SusX155
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:54
+#VehCode Longitudinal Movement
+
+EXIT_PARSFILE Suspensions\Longitudinal\SusX155.par
+
+#BlueLink1 Suspension: Longitudinal Position`Rear 5-Link - Longitudinal Movement` 20230503` , Left wheel X
+
+
+ENTER_PARSFILE Suspensions\Camber\Camber150.par`02-03-2010`09:58:55
+#FullDataName Suspension: Camber Angle`Rear 5-Link - Camber Change`20230503
+#RingCtrl0 SPLINE
+#RadioCtrl0 0
+
+
+#DiagramOne0
+CAMBER_TABLE SPLINE
+-70, 1.66479
+-60, 1.43877
+-50, 1.21143
+-40, 0.981031
+-30, 0.746032
+-20, 0.505036
+-10, 0.25676
+0, 0
+10, -0.266403
+20, -0.543604
+30, -0.832791
+40, -1.13524
+50, -1.45237
+60, -1.78583
+70, -2.13754
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Camber Angle; { 20230503 } Rear 5-Link - Camber Change
+#Library : Suspension: Camber Angle
+#DataSet : Rear 5-Link - Camber Change
+#Category: 20230503
+#FileID  : Camber150
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:55
+#VehCode Camber
+
+ENTRY_NOTEFILE Suspensions\Camber\Camber150_note.txt
+Generic 5-Link rear Camber change vs. Jounce
+EXIT_NOTEFILE Suspensions\Camber\Camber150_note.txt
+
+EXIT_PARSFILE Suspensions\Camber\Camber150.par
+
+#BlueLink2 Suspension: Camber Angle`Rear 5-Link - Camber Change` 20230503` , Left wheel camber
+
+
+ENTER_PARSFILE Suspensions\Lateral\SusLat152.par`02-03-2010`09:58:54
+#FullDataName Suspension: Lateral Position`Rear 5-Link - Lateral Movement`20230503
+#RingCtrl0 SPLINE
+#DiagramOne0
+SUSP_LAT_TABLE SPLINE
+-70, 5.34878
+-60, 3.82136
+-50, 2.55534
+-40, 1.54581
+-30, 0.788587
+-20, 0.280222
+-10, 0.018009
+0, 0
+10, 0.22505
+20, 0.692872
+30, 1.40412
+40, 2.36046
+50, 3.56474
+60, 5.02106
+70, 6.73495
+ENDTABLE
+SUSP_LAT_AXLE_JOUNCE_TABLE SPLINE
+-70, 5.34878
+-60, 3.82136
+-50, 2.55534
+-40, 1.54581
+-30, 0.788587
+-20, 0.280222
+-10, 0.018009
+0, 0
+10, 0.22505
+20, 0.692872
+30, 1.40412
+40, 2.36046
+50, 3.56474
+60, 5.02106
+70, 6.73495
+ENDTABLE
+#RadioCtrl0 0
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Lateral Position; { 20230503 } Rear 5-Link - Lateral Movement
+#Library : Suspension: Lateral Position
+#DataSet : Rear 5-Link - Lateral Movement
+#Category: 20230503
+#FileID  : SusLat152
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:54
+#VehCode Lateral Movement
+
+ENTRY_NOTEFILE Suspensions\Lateral\SusLat152_note.txt
+Generic 5-Link rear Lateral movement vs. Jounce
+EXIT_NOTEFILE Suspensions\Lateral\SusLat152_note.txt
+
+EXIT_PARSFILE Suspensions\Lateral\SusLat152.par
+
+#BlueLink3 Suspension: Lateral Position`Rear 5-Link - Lateral Movement` 20230503` , Left wheel lateral (-Y)
+
+
+ENTER_PARSFILE Suspensions\Toe\Toe151.par`02-03-2010`09:58:54
+#FullDataName Suspension: Toe Angle`Rear 5-Link - Toe Change`20230503
+#RingCtrl0 SPLINE
+#RadioCtrl0 0
+
+
+#DiagramOne0
+TOE_TABLE SPLINE
+-70, -1.02057
+-60, -0.828098
+-50, -0.65623
+-40, -0.501756
+-30, -0.361641
+-20, -0.233037
+-10, -0.113294
+0, 0
+10, 0.108974
+20, 0.215401
+30, 0.320605
+40, 0.425353
+50, 0.529714
+60, 0.632927
+70, 0.733253
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Suspension: Toe Angle; { 20230503 } Rear 5-Link - Toe Change
+#Library : Suspension: Toe Angle
+#DataSet : Rear 5-Link - Toe Change
+#Category: 20230503
+#FileID  : Toe151
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:54
+#VehCode Toe
+
+ENTRY_NOTEFILE Suspensions\Toe\Toe151_note.txt
+Generic 5-Link Rear Toe change vs. Jounce
+EXIT_NOTEFILE Suspensions\Toe\Toe151_note.txt
+
+EXIT_PARSFILE Suspensions\Toe\Toe151.par
+
+#BlueLink4 Suspension: Toe Angle`Rear 5-Link - Toe Change` 20230503` , Left wheel toe
+
+IW 0.9
+JNC_DESIGN 0
+A_TOE 0
+A_CAMBER 0
+
+iside 2
+#BlueLink5 Suspension: Dive Angle (Caster Change)`Rear 5-Link - Dive Angle` 20230503` , Right wheel dive (caster change)
+
+#BlueLink6 Suspension: Longitudinal Position`Rear 5-Link - Longitudinal Movement` 20230503` , Right wheel X
+
+#BlueLink7 Suspension: Camber Angle`Rear 5-Link - Camber Change` 20230503` , Right wheel camber
+
+#BlueLink8 Suspension: Lateral Position`Rear 5-Link - Lateral Movement` 20230503` , Right wheel lateral (+Y)
+
+#BlueLink9 Suspension: Toe Angle`Rear 5-Link - Toe Change` 20230503` , Right wheel toe
+
+IW 0.9
+JNC_DESIGN 0
+A_TOE 0
+A_CAMBER 0
+
+LOG_ENTRY Used Dataset: Suspension: Independent System Kinematics; { 20230503 } C-Class, Hatchback - Rear Suspension
+#Library : Suspension: Independent System Kinematics
+#DataSet : C-Class, Hatchback - Rear Suspension
+#Category: 20230503
+#FileID  : IndKin174
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:59:00
+#VehCode Independent
+
+ENTRY_NOTEFILE Suspensions\Kin_Indy\IndKin174_note.txt
+Generic 5-Link rear suspension kinematics generated by SuspensionSim.
+EXIT_NOTEFILE Suspensions\Kin_Indy\IndKin174_note.txt
+
+EXIT_PARSFILE Suspensions\Kin_Indy\IndKin174.par
+
+#BlueLink20 Suspension: Independent System Kinematics`C-Class, Hatchback - Rear Suspension` 20230503` , Rear kinematics
+
+
+* LR tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push <<tire>> L<<axle>>
+#BlueLink13 Tire`205/55 R16` 20230503` , Left-rear tire
+
+
+* RR tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push <<tire>> R<<axle>>
+#BlueLink14 Tire`205/55 R16` 20230503` , Right-rear tire
+
+WRITE_ADD_REFERENCE_FRAME_BODY
+
+ENTER_PARSFILE Vehicles\Sprung_Mass\SprMass151.par`02-03-2010`09:58:43
+#FullDataName Vehicle: Sprung Mass`C-Class, Hatchback Sprung Mass`20230503
+#VehCode Rigid Sprung Mass
+X_LENGTH 2578
+Y_LENGTH 1500
+iaxle 2
+iside 1
+LX_H 3350
+H_H 450
+H_CG_SU 540
+LX_AXLE 2578
+LX_CG_SU 1016
+M_SU 1274
+IXX_SU 606.1
+IYY_SU 1523
+IZZ_SU 1523
+IXZ_SU 0
+RX_SGUI 0.690
+RY_SGUI 1.093
+RZ_SGUI 1.093
+Y_CG_SU 0
+Y_H 0
+IXY_SU 0
+IYZ_SU 0
+Z_LENGTH 1478
+Y_LENGTH 1739
+*HWC_LF 316
+*HWC_RF 316
+*HWC_LR 316
+*HWC_RR 316
+
+#CheckBox1 0
+H_WC 316
+iside 2
+H_WC 316
+iaxle 1
+iside 1
+H_WC 316
+iside 2
+H_WC 316
+iaxle 2
+iside 1
+
+LOG_ENTRY Used Dataset: Vehicle: Sprung Mass; { 20230503 } C-Class, Hatchback Sprung Mass
+#Library : Vehicle: Sprung Mass
+#DataSet : C-Class, Hatchback Sprung Mass
+#Category: 20230503
+#FileID  : SprMass151
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:58:43
+#VehCode Rigid Sprung Mass
+
+EXIT_PARSFILE Vehicles\Sprung_Mass\SprMass151.par
+
+#BlueLink0 Vehicle: Sprung Mass`C-Class, Hatchback Sprung Mass` 20230503` , Sprung mass
+
+
+ENTER_PARSFILE Aerodynamics\Aero_Main\Aero138.par`02-03-2010`10:01:17
+#FullDataName Aerodynamics: Main Screen`C-Class, Hatchback Aero`20230503
+X_REF_AERO -1289
+Y_REF_AERO 0
+H_REF_AERO 0
+L_REF_AERO 2578
+AREA_AERO 1.6
+D_AIR 1.206
+
+X_REF_AIR -1289
+Y_REF_AIR 0
+H_REF_AIR 0
+L_REF_AIR 2578
+AAIR_CS 1.6
+
+ENTER_PARSFILE Aerodynamics\Aero_Fx\AirCFx126.par`02-03-2010`10:01:17
+#FullDataName Aerodynamics: Fx (Drag) Coefficient`CFx`20230503
+#RingCtrl0 LINEAR_FLAT
+#RadioCtrl0 0
+
+
+#DiagramOne0
+FX_AERO_SHAPING_TABLE LINEAR_FLAT
+-90, 0
+-84, 0.0112
+-78, 0.0435
+-72, 0.094
+-66, 0.1575
+-60, 0.2279
+-54, 0.2984
+-48, 0.3619
+-42, 0.4124
+-36, 0.4447
+-30, 0.4559
+-20, 0.4559
+-18, 0.434468
+-16, 0.415292
+-14, 0.398372
+-12, 0.383708
+-10, 0.3713
+-8, 0.361148
+-6, 0.353252
+-4, 0.347612
+-2, 0.344228
+0, 0.3431
+2, 0.344228
+4, 0.347612
+6, 0.353252
+8, 0.361148
+10, 0.3713
+12, 0.383708
+14, 0.398372
+16, 0.415292
+18, 0.434468
+20, 0.4559
+30, 0.4559
+36, 0.4447
+42, 0.4124
+48, 0.3619
+54, 0.2984
+60, 0.228
+66, 0.1575
+72, 0.094
+78, 0.0435
+84, 0.0112
+90, 0
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Aerodynamics: Fx (Drag) Coefficient; { 20230503 } CFx
+#Library : Aerodynamics: Fx (Drag) Coefficient
+#DataSet : CFx
+#Category: 20230503
+#FileID  : AirCFx126
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:17
+#VehCode Drag vs aero slip
+
+ENTRY_NOTEFILE Aerodynamics\Aero_Fx\AirCFx126_note.txt
+Example Drag Coefficient data.
+EXIT_NOTEFILE Aerodynamics\Aero_Fx\AirCFx126_note.txt
+
+EXIT_PARSFILE Aerodynamics\Aero_Fx\AirCFx126.par
+
+#BlueLink0 Aerodynamics: Fx (Drag) Coefficient`CFx` 20230503` , Long. force
+
+
+ENTER_PARSFILE Aerodynamics\Aero_Fy\AirCFy126.par`02-03-2010`10:01:17
+#FullDataName Aerodynamics: Fy (Side Force) Coefficient`CFy`20230503
+#RingCtrl0 LINEAR_FLAT
+#RadioCtrl0 0
+
+
+#DiagramOne0
+FY_AERO_SHAPING_TABLE LINEAR_FLAT
+-90, 0
+-84, -0.0169
+-78, -0.0659
+-72, -0.1422
+-66, -0.2384
+-60, -0.345
+-54, -0.4516
+-48, -0.5478
+-42, -0.6241
+-36, -0.6731
+-30, -0.69
+-20, -0.69
+20, 0.69
+30, 0.69
+36, 0.6731
+42, 0.6241
+48, 0.5478
+54, 0.4516
+60, 0.345
+66, 0.2384
+72, 0.1422
+78, 0.0659
+84, 0.0169
+90, 0
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Aerodynamics: Fy (Side Force) Coefficient; { 20230503 } CFy
+#Library : Aerodynamics: Fy (Side Force) Coefficient
+#DataSet : CFy
+#Category: 20230503
+#FileID  : AirCFy126
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:17
+#VehCode Aero side force vs aero slip
+
+ENTRY_NOTEFILE Aerodynamics\Aero_Fy\AirCFy126_note.txt
+Example CFy data.
+EXIT_NOTEFILE Aerodynamics\Aero_Fy\AirCFy126_note.txt
+
+EXIT_PARSFILE Aerodynamics\Aero_Fy\AirCFy126.par
+
+#BlueLink1 Aerodynamics: Fy (Side Force) Coefficient`CFy` 20230503` , Lateral force
+
+
+ENTER_PARSFILE Aerodynamics\Aero_Fz\AirCFz126.par`02-03-2010`10:01:16
+#FullDataName Aerodynamics: Fz (Lift) Coefficient`CFz`20230503
+#RingCtrl0 LINEAR_FLAT
+#RadioCtrl0 0
+
+
+#DiagramOne0
+FZ_AERO_SHAPING_TABLE LINEAR_FLAT
+-90, 0
+-84, 0.0145
+-78, 0.0567
+-72, 0.1224
+-66, 0.2052
+-60, 0.297
+-54, 0.3888
+-48, 0.4716
+-42, 0.5373
+-36, 0.5795
+-30, 0.594
+-20, 0.594
+-18, 0.51268
+-16, 0.43992
+-14, 0.37572
+-12, 0.32008
+-10, 0.273
+-8, 0.23448
+-6, 0.20452
+-4, 0.18312
+-2, 0.17028
+0, 0.166
+2, 0.17028
+4, 0.18312
+6, 0.20452
+8, 0.23448
+10, 0.273
+12, 0.32008
+14, 0.37572
+16, 0.43992
+18, 0.51268
+20, 0.594
+30, 0.594
+36, 0.5795
+42, 0.5373
+48, 0.4716
+54, 0.3888
+60, 0.297
+66, 0.2052
+72, 0.1224
+78, 0.0567
+84, 0.0145
+90, 0
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Aerodynamics: Fz (Lift) Coefficient; { 20230503 } CFz
+#Library : Aerodynamics: Fz (Lift) Coefficient
+#DataSet : CFz
+#Category: 20230503
+#FileID  : AirCFz126
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:16
+#VehCode Lift vs aero slip
+
+ENTRY_NOTEFILE Aerodynamics\Aero_Fz\AirCFz126_note.txt
+Example Lift force data.
+EXIT_NOTEFILE Aerodynamics\Aero_Fz\AirCFz126_note.txt
+
+EXIT_PARSFILE Aerodynamics\Aero_Fz\AirCFz126.par
+
+#BlueLink2 Aerodynamics: Fz (Lift) Coefficient`CFz` 20230503` , Vertical force
+
+
+ENTER_PARSFILE Aerodynamics\Aero_Mx\AirCMx126.par`02-03-2010`10:01:16
+#FullDataName Aerodynamics: Mx (Roll Moment) Coefficient`CMx`20230503
+#RingCtrl0 LINEAR_FLAT
+#RadioCtrl0 0
+
+
+#DiagramOne0
+MX_AERO_SHAPING_TABLE LINEAR_FLAT
+-90, 0
+-84, -0.0038
+-78, -0.0147
+-72, -0.0317
+-66, -0.0532
+-60, -0.077
+-54, -0.1008
+-48, -0.1223
+-42, -0.1393
+-36, -0.1502
+-30, -0.154
+-20, -0.154
+20, 0.154
+30, 0.154
+36, 0.1502
+42, 0.1393
+48, 0.1223
+54, 0.1008
+60, 0.077
+66, 0.0532
+72, 0.0317
+78, 0.0147
+84, 0.0038
+90, 0
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Aerodynamics: Mx (Roll Moment) Coefficient; { 20230503 } CMx
+#Library : Aerodynamics: Mx (Roll Moment) Coefficient
+#DataSet : CMx
+#Category: 20230503
+#FileID  : AirCMx126
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:16
+#VehCode Aero Mx vs aero slip
+
+ENTRY_NOTEFILE Aerodynamics\Aero_Mx\AirCMx126_note.txt
+Example CMx data.
+EXIT_NOTEFILE Aerodynamics\Aero_Mx\AirCMx126_note.txt
+
+EXIT_PARSFILE Aerodynamics\Aero_Mx\AirCMx126.par
+
+#BlueLink3 Aerodynamics: Mx (Roll Moment) Coefficient`CMx` 20230503` , Roll moment
+
+
+ENTER_PARSFILE Aerodynamics\Aero_My\AirCMy126.par`02-03-2010`10:01:16
+#FullDataName Aerodynamics: My (Pitch Moment) Coefficient`CMy`20230503
+#RingCtrl0 LINEAR_FLAT
+#RadioCtrl0 0
+
+
+#DiagramOne0
+MY_AERO_SHAPING_TABLE LINEAR_FLAT
+-90, 0
+-84, 0.0044
+-78, 0.0172
+-72, 0.0371
+-66, 0.0622
+-60, 0.09
+-54, 0.1178
+-48, 0.1429
+-42, 0.1628
+-36, 0.1756
+-30, 0.18
+-20, 0.18001
+-18, 0.165844
+-16, 0.153168
+-14, 0.141984
+-12, 0.132292
+-10, 0.12409
+-8, 0.11738
+-6, 0.11216
+-4, 0.108432
+-2, 0.106196
+0, 0.10545
+2, 0.106196
+4, 0.108432
+6, 0.11216
+8, 0.11738
+10, 0.12409
+12, 0.132292
+14, 0.141984
+16, 0.153168
+18, 0.165844
+20, 0.18001
+30, 0.18
+36, 0.1756
+42, 0.1628
+48, 0.1429
+54, 0.1178
+60, 0.09
+66, 0.0622
+72, 0.0371
+78, 0.0172
+84, 0.0044
+90, 0
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Aerodynamics: My (Pitch Moment) Coefficient; { 20230503 } CMy
+#Library : Aerodynamics: My (Pitch Moment) Coefficient
+#DataSet : CMy
+#Category: 20230503
+#FileID  : AirCMy126
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:16
+#VehCode Aero My vs aero slip
+
+ENTRY_NOTEFILE Aerodynamics\Aero_My\AirCMy126_note.txt
+Example CMy data.
+EXIT_NOTEFILE Aerodynamics\Aero_My\AirCMy126_note.txt
+
+EXIT_PARSFILE Aerodynamics\Aero_My\AirCMy126.par
+
+#BlueLink4 Aerodynamics: My (Pitch Moment) Coefficient`CMy` 20230503` , Pitch moment
+
+
+ENTER_PARSFILE Aerodynamics\Aero_Mz\AirCMz126.par`02-03-2010`10:01:16
+#FullDataName Aerodynamics: Mz (Yaw Moment) Coefficient`CMz`20230503
+#RingCtrl0 LINEAR_FLAT
+#RadioCtrl0 0
+
+
+#DiagramOne0
+MZ_AERO_SHAPING_TABLE LINEAR_FLAT
+-90, 0
+-84, -0.0045
+-78, -0.0175
+-72, -0.0378
+-66, -0.0634
+-60, -0.0918
+-54, -0.1202
+-48, -0.1458
+-42, -0.1661
+-36, -0.1791
+-30, -0.1836
+-20, -0.1836
+20, 0.1836
+30, 0.1836
+36, 0.1791
+42, 0.1661
+48, 0.1458
+54, 0.1202
+60, 0.0918
+66, 0.0634
+72, 0.0378
+78, 0.0175
+84, 0.0045
+90, 0
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Aerodynamics: Mz (Yaw Moment) Coefficient; { 20230503 } CMz
+#Library : Aerodynamics: Mz (Yaw Moment) Coefficient
+#DataSet : CMz
+#Category: 20230503
+#FileID  : AirCMz126
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:16
+#VehCode Aero Mz vs aero slip
+
+ENTRY_NOTEFILE Aerodynamics\Aero_Mz\AirCMz126_note.txt
+NOTE: In earlier versions of CarSim 7.01b and earlier, the CMz dataset data had incorrect sign data and has been replaced by this dataset.
+EXIT_NOTEFILE Aerodynamics\Aero_Mz\AirCMz126_note.txt
+
+EXIT_PARSFILE Aerodynamics\Aero_Mz\AirCMz126.par
+
+#BlueLink5 Aerodynamics: Mz (Yaw Moment) Coefficient`CMz` 20230503` , Yaw moment
+
+
+LOG_ENTRY Used Dataset: Aerodynamics: Main Screen; { 20230503 } C-Class, Hatchback Aero
+#Library : Aerodynamics: Main Screen
+#DataSet : C-Class, Hatchback Aero
+#Category: 20230503
+#FileID  : Aero138
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:17
+#VehCode Aerodynamics
+
+ENTRY_NOTEFILE Aerodynamics\Aero_Main\Aero138_note.txt
+According to SAE convention, the reference point is located at the midpoint of the wheelbase, the midpoint of the track, at ground level., and the reference length is equal to the wheelbase.
+
+EXIT_NOTEFILE Aerodynamics\Aero_Main\Aero138_note.txt
+
+EXIT_PARSFILE Aerodynamics\Aero_Main\Aero138.par
+
+#BlueLink1 Aerodynamics: Main Screen`C-Class, Hatchback Aero` 20230503` , Aerodynamics
+
+
+ENTER_PARSFILE Animator\Vehicles\AniVeh158.par`02-03-2010`10:00:38
+#FullDataName Animator: Vehicles and Sensor Targets`C-Class, Hatchback`20230503
+#CheckBox0 1
+#CheckBox1 0
+#CheckBox2 1
+#CheckBox3 0
+#CheckBox4 0
+
+OBJ_X_LENGTH 2578
+OBJ_Y_LENGTH 1739
+OBJ_Z_LENGTH 1478
+*DZ_V 0
+*LAT_WC 1500
+*LAT_WC_2 1500
+*HWC 300
+*WHEEL_RATIO 1.2
+*IMAGE_TYPE DEFAULT
+DZ_OBJECT 0
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+TIRE_ANI_PARSFILE Animator\STL\AniSTL1011.par
+SET_SCALE_X 1.2
+SET_SCALE_Y 1.2
+SET_SCALE_Z 1.2
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.75
+SET_OFFSET_Z 0.285
+TIRE_ANI_PARSFILE Animator\STL\AniSTL1011.par
+SET_SCALE_X 1.2
+SET_SCALE_Y 1.2
+SET_SCALE_Z 1.2
+SET_ANGLE_X 180
+SET_OFFSET_X 0
+SET_OFFSET_Y -0.75
+SET_OFFSET_Z 0.285
+TIRE_ANI_PARSFILE Animator\STL\AniSTL1011.par
+SET_SCALE_X 1.2
+SET_SCALE_Y 1.2
+SET_SCALE_Z 1.2
+SET_OFFSET_X -2.578
+SET_OFFSET_Y 0.75
+SET_OFFSET_Z 0.285
+TIRE_ANI_PARSFILE Animator\STL\AniSTL1011.par
+SET_SCALE_X 1.2
+SET_SCALE_Y 1.2
+SET_SCALE_Z 1.2
+SET_ANGLE_X 180
+SET_OFFSET_X -2.578
+SET_OFFSET_Y -0.75
+SET_OFFSET_Z 0.285
+WRITE_ADD_REFERENCE_FRAME_SHADOW
+
+ENTER_PARSFILE Animator\STL\AniSTL1001.par`02-03-2010`10:01:07
+#FullDataName Animator: Shape File Link`Vehicle Shadow Shape`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\vehicles\vehicle_shadows\shadow.obj
+#ENDMYellow
+
+SET_COLOR 0.125 0.125 0.125
+X_REF_LENGTH 2690
+Y_REF_LENGTH 1900
+Z_REF_LENGTH 1220
+*TRANSPARENCY 0.8
+#RingCtrl0 1
+#CheckBox0 1
+set_lighting off
+#CheckBox1 0
+set_fogging on
+#CheckBox3 0
+
+set_transparency 0.8
+show_front on
+show_back off
+#MiscYellow0
+tranclucent_fix on
+#ENDMYellow
+
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Vehicle Shadow Shape
+#Library : Animator: Shape File Link
+#DataSet : Vehicle Shadow Shape
+#Category: 20230503
+#FileID  : AniSTL1001
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:07
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1001.par
+
+#BlueLink0 Animator: Shape File Link`Vehicle Shadow Shape` 20230503` , Shadow
+
+WRITE_REFERENCE_FRAME_SIZE
+DZ_OBJECT 0
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+
+ENTER_PARSFILE Animator\STL_Groups\StlGroup295.par`02-03-2010`10:00:43
+#FullDataName Animator: Shape Assembly`C-Class, Hatchback`20230503
+*COLOR .36 .117 .117
+*OFFSET_X 0
+*OFFSET_Y 0
+*OFFSET_Z 0.27
+*X_REF_LENGTH 2575
+*Y_REF_LENGTH 1600
+*Z_REF_LENGTH 1600
+#CheckBox0 0
+#CheckBox2 0
+#CheckBox3 0
+#CheckBox4 1
+#CheckBox5 1
+
+#RingCtrl0 1
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE DEFAULT
+
+ENTER_PARSFILE Animator\STL\AniSTL1002.par`02-03-2010`10:00:51
+#FullDataName Animator: Shape File Link`Hatchback: Body`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\vehicles\hatchback\body.obj
+#ENDMYellow
+
+SET_COLOR 0 0 0.4
+*SPECULAR 1
+SMOOTH_MAX_ANGLE 45
+#RingCtrl0 1
+#CheckBox0 0
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox2 1
+mtl_ns_old on
+#CheckBox3 1
+USE_RUN_COLOR
+
+show_front on
+show_back off
+SET_SPECULAR 1 1 1
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Hatchback: Body
+#Library : Animator: Shape File Link
+#DataSet : Hatchback: Body
+#Category: 20230503
+#FileID  : AniSTL1002
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:51
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1002.par
+
+#BlueLink0 Animator: Shape File Link`Hatchback: Body` 20230503` , Shape File
+
+show_front on
+show_back off
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.27
+
+ENTER_PARSFILE Animator\STL\AniSTL1003.par`02-03-2010`10:00:51
+#FullDataName Animator: Shape File Link`Hatchback: Body 2`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\vehicles\hatchback\body2.obj
+#ENDMYellow
+
+SET_COLOR 0 0 0.4
+*SPECULAR 1
+SMOOTH_MAX_ANGLE 45
+#RingCtrl0 1
+#CheckBox0 0
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox2 1
+mtl_ns_old on
+#CheckBox3 1
+USE_RUN_COLOR
+
+show_front on
+show_back off
+SET_SPECULAR 1 1 1
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Hatchback: Body 2
+#Library : Animator: Shape File Link
+#DataSet : Hatchback: Body 2
+#Category: 20230503
+#FileID  : AniSTL1003
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:51
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1003.par
+
+#BlueLink1 Animator: Shape File Link`Hatchback: Body 2` 20230503` , Shape File
+
+show_front on
+show_back off
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.27
+
+ENTER_PARSFILE Animator\STL\AniSTL1004.par`02-03-2010`10:00:51
+#FullDataName Animator: Shape File Link`Hatchback: Details`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\vehicles\hatchback\details.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 0.3
+SMOOTH_MAX_ANGLE 45
+#RingCtrl0 1
+#CheckBox0 0
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox2 1
+mtl_ns_old on
+#CheckBox3 0
+
+show_front on
+show_back off
+SET_SPECULAR 0.3 0.3 0.3
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Hatchback: Details
+#Library : Animator: Shape File Link
+#DataSet : Hatchback: Details
+#Category: 20230503
+#FileID  : AniSTL1004
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:51
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1004.par
+
+#BlueLink2 Animator: Shape File Link`Hatchback: Details` 20230503` , Shape File
+
+show_front on
+show_back off
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.27
+
+ENTER_PARSFILE Animator\STL\AniSTL1005.par`02-03-2010`10:00:52
+#FullDataName Animator: Shape File Link`Hatchback: Interior`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\vehicles\hatchback\interior.obj
+#ENDMYellow
+
+SET_COLOR 0.753 0.753 0.753
+*SPECULAR 0.3
+SMOOTH_MAX_ANGLE 45
+#RingCtrl0 1
+#CheckBox0 0
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox2 1
+mtl_ns_old on
+#CheckBox3 0
+
+show_front on
+show_back off
+SET_SPECULAR 0.3 0.3 0.3
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Hatchback: Interior
+#Library : Animator: Shape File Link
+#DataSet : Hatchback: Interior
+#Category: 20230503
+#FileID  : AniSTL1005
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:52
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1005.par
+
+#BlueLink3 Animator: Shape File Link`Hatchback: Interior` 20230503` , Shape File
+
+show_front on
+show_back off
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.27
+
+ENTER_PARSFILE Animator\STL\AniSTL1006.par`02-03-2010`10:00:52
+#FullDataName Animator: Shape File Link`Hatchback: Interior Trim`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\vehicles\hatchback\interior_trim.obj
+#ENDMYellow
+
+SET_COLOR .4 .4 .4
+*SPECULAR 0.3
+SMOOTH_MAX_ANGLE 45
+#RingCtrl0 1
+#CheckBox0 0
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox2 1
+mtl_ns_old on
+#CheckBox3 0
+
+show_front on
+show_back off
+SET_SPECULAR 0.3 0.3 0.3
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Hatchback: Interior Trim
+#Library : Animator: Shape File Link
+#DataSet : Hatchback: Interior Trim
+#Category: 20230503
+#FileID  : AniSTL1006
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:52
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1006.par
+
+#BlueLink4 Animator: Shape File Link`Hatchback: Interior Trim` 20230503` , Shape File
+
+show_front on
+show_back off
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.27
+
+ENTER_PARSFILE Animator\STL\AniSTL1007.par`02-03-2010`10:00:52
+#FullDataName Animator: Shape File Link`Hatchback: Steering Wheel`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\vehicles\hatchback\steering_wheel.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 0.3
+#RingCtrl0 1
+#CheckBox0 0
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox2 1
+mtl_ns_old on
+#CheckBox3 0
+
+show_front on
+show_back off
+SET_SPECULAR 0.3 0.3 0.3
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Hatchback: Steering Wheel
+#Library : Animator: Shape File Link
+#DataSet : Hatchback: Steering Wheel
+#Category: 20230503
+#FileID  : AniSTL1007
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:52
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1007.par
+
+#BlueLink5 Animator: Shape File Link`Hatchback: Steering Wheel` 20230503` , Shape File
+
+show_front on
+show_back off
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.27
+
+ENTER_PARSFILE Animator\STL\AniSTL1008.par`02-03-2010`10:00:52
+#FullDataName Animator: Shape File Link`Hatchback: Windows`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\vehicles\hatchback\windows.obj
+#ENDMYellow
+
+SET_COLOR 0 0 0
+*SPECULAR 1
+*TRANSPARENCY 0.7
+SMOOTH_MAX_ANGLE 45
+#RingCtrl0 1
+#CheckBox0 0
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox2 1
+mtl_ns_old on
+#CheckBox3 0
+
+set_transparency 0.7
+show_front on
+show_back off
+SET_SPECULAR 1 1 1
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Hatchback: Windows
+#Library : Animator: Shape File Link
+#DataSet : Hatchback: Windows
+#Category: 20230503
+#FileID  : AniSTL1008
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:52
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1008.par
+
+#BlueLink6 Animator: Shape File Link`Hatchback: Windows` 20230503` , Shape File
+
+show_front on
+show_back off
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.27
+
+ENTER_PARSFILE Animator\STL\AniSTL1009.par`02-03-2010`10:00:52
+#FullDataName Animator: Shape File Link`Hatchback: Driver`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\vehicles\hatchback\driver.obj
+#ENDMYellow
+
+SET_COLOR 0.753 0.753 0.753
+*SPECULAR 0
+SMOOTH_MAX_ANGLE 100
+#RingCtrl0 1
+#CheckBox0 0
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox2 1
+mtl_ns_old on
+#CheckBox3 0
+
+show_front on
+show_back off
+SET_SPECULAR 0 0 0
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Hatchback: Driver
+#Library : Animator: Shape File Link
+#DataSet : Hatchback: Driver
+#Category: 20230503
+#FileID  : AniSTL1009
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:52
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1009.par
+
+#BlueLink13 Animator: Shape File Link`Hatchback: Driver` 20230503` , Shape File
+
+show_front on
+show_back off
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.27
+x_ref_length 2575
+y_ref_length 1600
+z_ref_length 1600
+
+#BlueLink17 Animator: Camera Setup`Shape Preview (Side)` 20230503` , Animator camera
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { 20230503 } C-Class, Hatchback
+#Library : Animator: Shape Assembly
+#DataSet : C-Class, Hatchback
+#Category: 20230503
+#FileID  : StlGroup295
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:43
+#VehCode Shape Group
+
+EXIT_PARSFILE Animator\STL_Groups\StlGroup295.par
+
+#BlueLink1 Animator: Shape Assembly`C-Class, Hatchback` 20230503` , Vehicle body
+
+
+ENTER_PARSFILE Animator\Sound\Set\SndSet149.par`02-03-2010`10:00:39
+#FullDataName Animator: Sound Set`General Car Sounds`20230503
+
+
+ENTER_PARSFILE Animator\Sound\Sample\SndSmp220.par`02-03-2010`10:00:39
+#FullDataName Animator: Sound Sample`Gas Engine Sample, Coast`20230503
+
+ADD_3D_SOUND Animator\Audio\Engine\Generic-Engine-02_L4_2.4L_0.0-Load_03-Mid-RPM.WAV
+#CheckBox0 1
+LOOP_SOUND on
+
+#RingCtrl0 Default
+SOUND_AUTO_START Default
+
+SOUND_VOL_MULT 1.0
+SOUND_VOL_MIN 0.01
+SOUND_VOL_MAX 9.0
+SOUND_FREQ_MULT 1.0
+SOUND_FREQ_MIN 0.01
+SOUND_FREQ_MAX 8.0
+
+
+ENTER_PARSFILE Animator\Sound\Modifier\SndMod388.par`02-03-2010`10:00:40
+#FullDataName Animator: Sound Modifier`Gas Engine Vol. 1, Throttle`20230503
+
+
+#RingCtrl0 VOLUME
+ADD_SOUND_MODIFIER VOLUME
+SOUNDMOD_OPERATION mult
+
+SOUNDMOD_INPUT_NAME throttle
+SOUNDMOD_INPUT_MIN 0.0
+SOUNDMOD_INPUT_LOW 1.0
+SOUNDMOD_INPUT_HIGH 1.0
+SOUNDMOD_INPUT_MAX 1.0
+SOUNDMOD_OUTPUT_MIN 0.25
+SOUNDMOD_OUTPUT_LOW 0.0
+SOUNDMOD_OUTPUT_HIGH 0.0
+SOUNDMOD_OUTPUT_MAX 0.0
+
+WRT_throttle
+ANI_throttle
+
+LOG_ENTRY Used Dataset: Animator: Sound Modifier; { 20230503 } Gas Engine Vol. 1, Throttle
+#Library : Animator: Sound Modifier
+#DataSet : Gas Engine Vol. 1, Throttle
+#Category: 20230503
+#FileID  : SndMod388
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:40
+#VehCode Sound Modifier
+
+EXIT_PARSFILE Animator\Sound\Modifier\SndMod388.par
+
+#BlueLink0 Animator: Sound Modifier`Gas Engine Vol. 1, Throttle` 20230503` , Playback modification 1
+
+
+ENTER_PARSFILE Animator\Sound\Modifier\SndMod389.par`02-03-2010`10:00:40
+#FullDataName Animator: Sound Modifier`Gas Engine, RPM`20230503
+
+
+#RingCtrl0 VOLUME
+ADD_SOUND_MODIFIER VOLUME
+SOUNDMOD_OPERATION mult
+
+SOUNDMOD_INPUT_NAME av_eng
+SOUNDMOD_INPUT_MIN 0.0
+SOUNDMOD_INPUT_LOW 1000.0
+SOUNDMOD_INPUT_HIGH 5000.0
+SOUNDMOD_INPUT_MAX 7500.0
+SOUNDMOD_OUTPUT_MIN 0.40
+SOUNDMOD_OUTPUT_LOW 0.60
+SOUNDMOD_OUTPUT_HIGH 0.80
+SOUNDMOD_OUTPUT_MAX 1.0
+
+WRT_av_eng
+ANI_av_eng
+
+LOG_ENTRY Used Dataset: Animator: Sound Modifier; { 20230503 } Gas Engine, RPM
+#Library : Animator: Sound Modifier
+#DataSet : Gas Engine, RPM
+#Category: 20230503
+#FileID  : SndMod389
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:40
+#VehCode Sound Modifier
+
+EXIT_PARSFILE Animator\Sound\Modifier\SndMod389.par
+
+#BlueLink1 Animator: Sound Modifier`Gas Engine, RPM` 20230503` , Playback modification 2
+
+
+ENTER_PARSFILE Animator\Sound\Modifier\SndMod390.par`02-03-2010`10:00:40
+#FullDataName Animator: Sound Modifier`Gas Engine Freq 1`20230503
+
+
+#RingCtrl0 FREQUENCY
+ADD_SOUND_MODIFIER FREQUENCY
+SOUNDMOD_OPERATION mult
+
+SOUNDMOD_INPUT_NAME av_eng
+SOUNDMOD_INPUT_MIN 0.0
+SOUNDMOD_INPUT_LOW 500.0
+SOUNDMOD_INPUT_HIGH 4000.0
+SOUNDMOD_INPUT_MAX 8000.0
+SOUNDMOD_OUTPUT_MIN 0.0
+SOUNDMOD_OUTPUT_LOW 0.5
+SOUNDMOD_OUTPUT_HIGH 1.0
+SOUNDMOD_OUTPUT_MAX 2.0
+
+WRT_av_eng
+ANI_av_eng
+
+LOG_ENTRY Used Dataset: Animator: Sound Modifier; { 20230503 } Gas Engine Freq 1
+#Library : Animator: Sound Modifier
+#DataSet : Gas Engine Freq 1
+#Category: 20230503
+#FileID  : SndMod390
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:40
+#VehCode Sound Modifier
+
+EXIT_PARSFILE Animator\Sound\Modifier\SndMod390.par
+
+#BlueLink2 Animator: Sound Modifier`Gas Engine Freq 1` 20230503` , Playback modification 3
+
+
+LOG_ENTRY Used Dataset: Animator: Sound Sample; { 20230503 } Gas Engine Sample, Coast
+#Library : Animator: Sound Sample
+#DataSet : Gas Engine Sample, Coast
+#Category: 20230503
+#FileID  : SndSmp220
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:39
+#VehCode Sound Sample
+
+EXIT_PARSFILE Animator\Sound\Sample\SndSmp220.par
+
+#BlueLink0 Animator: Sound Sample`Gas Engine Sample, Coast` 20230503` , Sample 1
+
+
+
+ENTER_PARSFILE Animator\Sound\Sample\SndSmp221.par`02-03-2010`10:00:39
+#FullDataName Animator: Sound Sample`Gas Engine Sample, Power`20230503
+
+ADD_3D_SOUND Animator\Audio\Engine\Generic-Engine-02_L4_2.4L_1.0-Load_03-Mid-RPM.WAV
+#CheckBox0 1
+LOOP_SOUND on
+
+#RingCtrl0 Default
+SOUND_AUTO_START Default
+
+SOUND_VOL_MULT 0.8
+SOUND_VOL_MIN 0.01
+SOUND_VOL_MAX 9.0
+SOUND_FREQ_MULT 1.0
+SOUND_FREQ_MIN 0.01
+SOUND_FREQ_MAX 9.0
+
+
+ENTER_PARSFILE Animator\Sound\Modifier\SndMod391.par`02-03-2010`10:00:40
+#FullDataName Animator: Sound Modifier`Gas Engine Vol. 2, Throttle`20230503
+
+
+#RingCtrl0 VOLUME
+ADD_SOUND_MODIFIER VOLUME
+SOUNDMOD_OPERATION mult
+
+SOUNDMOD_INPUT_NAME throttle
+SOUNDMOD_INPUT_MIN 0.0
+SOUNDMOD_INPUT_LOW 1.0
+SOUNDMOD_INPUT_HIGH 1.0
+SOUNDMOD_INPUT_MAX 1.0
+SOUNDMOD_OUTPUT_MIN 0.0
+SOUNDMOD_OUTPUT_LOW 1.0
+SOUNDMOD_OUTPUT_HIGH 1.0
+SOUNDMOD_OUTPUT_MAX 1.0
+
+WRT_throttle
+ANI_throttle
+
+LOG_ENTRY Used Dataset: Animator: Sound Modifier; { 20230503 } Gas Engine Vol. 2, Throttle
+#Library : Animator: Sound Modifier
+#DataSet : Gas Engine Vol. 2, Throttle
+#Category: 20230503
+#FileID  : SndMod391
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:40
+#VehCode Sound Modifier
+
+EXIT_PARSFILE Animator\Sound\Modifier\SndMod391.par
+
+#BlueLink0 Animator: Sound Modifier`Gas Engine Vol. 2, Throttle` 20230503` , Playback modification 1
+
+#BlueLink1 Animator: Sound Modifier`Gas Engine, RPM` 20230503` , Playback modification 2
+
+#BlueLink2 Animator: Sound Modifier`Gas Engine Freq 1` 20230503` , Playback modification 3
+
+
+LOG_ENTRY Used Dataset: Animator: Sound Sample; { 20230503 } Gas Engine Sample, Power
+#Library : Animator: Sound Sample
+#DataSet : Gas Engine Sample, Power
+#Category: 20230503
+#FileID  : SndSmp221
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:39
+#VehCode Sound Sample
+
+EXIT_PARSFILE Animator\Sound\Sample\SndSmp221.par
+
+#BlueLink1 Animator: Sound Sample`Gas Engine Sample, Power` 20230503` , Sample 2
+
+
+
+ENTER_PARSFILE Animator\Sound\Sample\SndSmp222.par`02-03-2010`10:00:40
+#FullDataName Animator: Sound Sample`Wind Noise`20230503
+
+ADD_3D_SOUND Animator\Audio\Environment\Wind_1_Mono.WAV
+#CheckBox0 1
+LOOP_SOUND on
+
+#RingCtrl0 Default
+SOUND_AUTO_START Default
+
+SOUND_VOL_MULT 1.5
+SOUND_VOL_MIN 0.01
+SOUND_VOL_MAX 9.0
+SOUND_FREQ_MULT 1.0
+SOUND_FREQ_MIN 0.01
+SOUND_FREQ_MAX 9.0
+
+
+ENTER_PARSFILE Animator\Sound\Modifier\SndMod392.par`02-03-2010`10:00:40
+#FullDataName Animator: Sound Modifier`Wind Vol. 1`20230503
+
+
+#RingCtrl0 VOLUME
+ADD_SOUND_MODIFIER VOLUME
+SOUNDMOD_OPERATION mult
+
+SOUNDMOD_INPUT_NAME vAir
+SOUNDMOD_INPUT_MIN 0.0
+SOUNDMOD_INPUT_LOW 80
+SOUNDMOD_INPUT_HIGH 160
+SOUNDMOD_INPUT_MAX 240
+SOUNDMOD_OUTPUT_MIN 0.0
+SOUNDMOD_OUTPUT_LOW 0.03125
+SOUNDMOD_OUTPUT_HIGH 0.125
+SOUNDMOD_OUTPUT_MAX 0.25
+
+WRT_vAir
+ANI_vAir
+
+LOG_ENTRY Used Dataset: Animator: Sound Modifier; { 20230503 } Wind Vol. 1
+#Library : Animator: Sound Modifier
+#DataSet : Wind Vol. 1
+#Category: 20230503
+#FileID  : SndMod392
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:40
+#VehCode Sound Modifier
+
+EXIT_PARSFILE Animator\Sound\Modifier\SndMod392.par
+
+#BlueLink0 Animator: Sound Modifier`Wind Vol. 1` 20230503` , Playback modification 1
+
+
+ENTER_PARSFILE Animator\Sound\Modifier\SndMod393.par`02-03-2010`10:00:40
+#FullDataName Animator: Sound Modifier`Wind Frequency`20230503
+
+
+#RingCtrl0 FREQUENCY
+ADD_SOUND_MODIFIER FREQUENCY
+SOUNDMOD_OPERATION mult
+
+SOUNDMOD_INPUT_NAME vAir
+SOUNDMOD_INPUT_MIN 0.0
+SOUNDMOD_INPUT_LOW 125
+SOUNDMOD_INPUT_HIGH 250
+SOUNDMOD_INPUT_MAX 375
+SOUNDMOD_OUTPUT_MIN 0.0
+SOUNDMOD_OUTPUT_LOW 0.6667
+SOUNDMOD_OUTPUT_HIGH 1.3333
+SOUNDMOD_OUTPUT_MAX 2.0
+
+WRT_vAir
+ANI_vAir
+
+LOG_ENTRY Used Dataset: Animator: Sound Modifier; { 20230503 } Wind Frequency
+#Library : Animator: Sound Modifier
+#DataSet : Wind Frequency
+#Category: 20230503
+#FileID  : SndMod393
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:40
+#VehCode Sound Modifier
+
+EXIT_PARSFILE Animator\Sound\Modifier\SndMod393.par
+
+#BlueLink1 Animator: Sound Modifier`Wind Frequency` 20230503` , Playback modification 2
+
+
+LOG_ENTRY Used Dataset: Animator: Sound Sample; { 20230503 } Wind Noise
+#Library : Animator: Sound Sample
+#DataSet : Wind Noise
+#Category: 20230503
+#FileID  : SndSmp222
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:40
+#VehCode Sound Sample
+
+EXIT_PARSFILE Animator\Sound\Sample\SndSmp222.par
+
+#BlueLink2 Animator: Sound Sample`Wind Noise` 20230503` , Sample 3
+
+
+
+
+
+
+
+
+
+
+
+LOG_ENTRY Used Dataset: Animator: Sound Set; { 20230503 } General Car Sounds
+#Library : Animator: Sound Set
+#DataSet : General Car Sounds
+#Category: 20230503
+#FileID  : SndSet149
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:39
+#VehCode Sound Set
+
+EXIT_PARSFILE Animator\Sound\Set\SndSet149.par
+
+#BlueLink6 Animator: Sound Set`General Car Sounds` 20230503` , Sound Set
+
+WRITE_REFERENCE_FRAME_SIZE
+WRITE_ADD_REFERENCE_FRAME_BRAKES
+
+ENTER_PARSFILE Animator\STL\AniSTL1010.par`02-03-2010`10:00:51
+#FullDataName Animator: Shape File Link`Hatchback: Brake Lights`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\vehicles\hatchback\brakes_on.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+SET_OFFSET_X -0.01
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.27
+X_REF_LENGTH 2575
+Y_REF_LENGTH 1600
+Z_REF_LENGTH 1600
+*SPECULAR 1
+SMOOTH_MAX_ANGLE 27
+#RingCtrl0 1
+#CheckBox0 0
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox2 1
+mtl_ns_old on
+#CheckBox3 0
+
+show_front on
+show_back off
+SET_SPECULAR 1 1 1
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Hatchback: Brake Lights
+#Library : Animator: Shape File Link
+#DataSet : Hatchback: Brake Lights
+#Category: 20230503
+#FileID  : AniSTL1010
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:51
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1010.par
+
+#BlueLink3 Animator: Shape File Link`Hatchback: Brake Lights` 20230503` , Brake lights
+
+WRITE_REFERENCE_FRAME_SIZE
+
+
+ENTER_PARSFILE Animator\Cameras\Camera290.par`02-03-2010`10:01:14
+#FullDataName Animator: Camera Setup`Vehicle Pictures`20230503
+#RingCtrl1 0
+
+#CheckBox0 0
+#CheckBox1 0
+
+GHOST_COUNT 0
+SET_CAMERA_Reference_Frame 20230503 Yaw for Shape Preview
+#BlueLink0 Animator: Reference Frame`Yaw for Shape Preview` 20230503` , Reference frame for outside camera
+
+SET_LOOKPOINT_Reference_Frame 20230503 Yaw for Shape Preview
+SET_LOOKPOINT_X 1
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0.5
+SET_AZIMUTH 230
+SET_ELEVATION 6
+SET_DISTANCE 12
+*SET_LOOKPOINT_X 1
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 0.5
+*SET_AZIMUTH 230
+*SET_ELEVATION 6
+*SET_DISTANCE 12
+GHOST_COUNT 0
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 21.1
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { 20230503 } Vehicle Pictures
+#Library : Animator: Camera Setup
+#DataSet : Vehicle Pictures
+#Category: 20230503
+#FileID  : Camera290
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:14
+#VehCode Camera
+
+ENTRY_NOTEFILE Animator\Cameras\Camera290_note.txt
+Pause the animation at the very start and center the vehicle in the animator  to take a picture for the Animator: Vehicle screen.
+EXIT_NOTEFILE Animator\Cameras\Camera290_note.txt
+
+EXIT_PARSFILE Animator\Cameras\Camera290.par
+
+#BlueLink5 Animator: Camera Setup`Vehicle Pictures` 20230503` , Animator camera
+
+
+ENTER_PARSFILE Animator\STL\AniSTL1011.par`02-03-2010`10:01:03
+#FullDataName Animator: Shape File Link`Blurred Tire`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\tires\blurred_tire\blurred_tire.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 0.3
+SMOOTH_MAX_ANGLE 1
+#RingCtrl0 0
+#CheckBox0 0
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox2 1
+mtl_ns_old on
+#CheckBox3 0
+
+show_front on
+show_back on
+SET_SPECULAR 0.3 0.3 0.3
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Blurred Tire
+#Library : Animator: Shape File Link
+#DataSet : Blurred Tire
+#Category: 20230503
+#FileID  : AniSTL1011
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:03
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1011.par
+
+#BlueLink2 Animator: Shape File Link`Blurred Tire` 20230503` , Tire for traffic vehicle
+
+
+LOG_ENTRY Used Dataset: Animator: Vehicles and Sensor Targets; { 20230503 } C-Class, Hatchback
+#Library : Animator: Vehicles and Sensor Targets
+#DataSet : C-Class, Hatchback
+#Category: 20230503
+#FileID  : AniVeh158
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:38
+#VehCode Vehicle Shape
+
+ENTRY_NOTEFILE Animator\Vehicles\AniVeh158_note.txt
+The Animator: Vehicles and Other Moving Objects screen is used to define animation shapes to be used with the animator.
+EXIT_NOTEFILE Animator\Vehicles\AniVeh158_note.txt
+
+EXIT_PARSFILE Animator\Vehicles\AniVeh158.par
+
+#BlueLink2 Animator: Vehicles and Sensor Targets`C-Class, Hatchback` 20230503` , Vehicle animator data
+
+
+ENTER_PARSFILE Powertrain\Fwd\FWD118.par`03-05-2023`22:06:47
+#FullDataName Powertrain: Front-Wheel Drive`150 kW, 6-spd., 4.1 Ratio`20230205
+
+OPT_PT 1
+
+#RingCtrl0 0
+OPT_ENGINE_INTERNAL 0
+#RingCtrl1 0
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl4 1
+R_MDRIVE 1
+DRIVELINE_FREQ 9
+DRIVELINE_ZETA 0.9
+
+
+OPT_PWR_CPL_INTERNAL 0
+OPT_TRANS_INTERNAL 0
+OPT_DIFF_INTERNAL(1) 0
+
+
+IDIFF 1
+
+IDIFF 1
+
+LOG_ENTRY Used Dataset: Powertrain: Front-Wheel Drive; { 20230205 } 150 kW, 6-spd., 4.1 Ratio
+#Library : Powertrain: Front-Wheel Drive
+#DataSet : 150 kW, 6-spd., 4.1 Ratio
+#Category: 20230205
+#FileID  : FWD118
+#Product : CarSim Version 8.02, March 2010
+#Last update: 03-05-2023 22:06:47
+#VehCode FWD
+
+ENTRY_NOTEFILE Powertrain\Fwd\FWD118_note.txt
+Generic 150 kW powertrain with an automatic transmission. The torque converter data has been tuned to work with the 150 kW engine to give reasonable performance.
+EXIT_NOTEFILE Powertrain\Fwd\FWD118_note.txt
+
+EXIT_PARSFILE Powertrain\Fwd\FWD118.par
+
+#BlueLink3 Powertrain: Front-Wheel Drive`150 kW, 6-spd., 4.1 Ratio` 20230205` , Front-wheel drive
+
+
+ENTER_PARSFILE Brakes\4W_System\Brk4W146.par`02-03-2010`10:00:35
+#FullDataName Brakes: Four-Wheel System`C-Class, Hatchback w/o ABS`20230503
+TC_L1 0.06
+TC_R1 0.06
+TC_L2 0.06
+TC_R2 0.06
+TL_L1 0
+TL_R1 0
+TL_L2 0
+TL_R2 0
+
+#CheckBox0 1
+
+
+iaxle 1
+iside 1
+
+ENTER_PARSFILE Brakes\Torque\BrkTrq156.par`02-03-2010`10:00:33
+#FullDataName Brakes: Torque`300 N-m/MPa`20230503
+#RingCtrl0 COEFFICIENT
+#RadioCtrl0 0
+
+*SCALAR 300
+
+
+MY_BRAKE_COEFFICIENT 300
+
+LOG_ENTRY Used Dataset: Brakes: Torque; { 20230503 } 300 N-m/MPa
+#Library : Brakes: Torque
+#DataSet : 300 N-m/MPa
+#Category: 20230503
+#FileID  : BrkTrq156
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:33
+#VehCode Brake torque
+
+EXIT_PARSFILE Brakes\Torque\BrkTrq156.par
+
+#BlueLink0 Brakes: Torque`300 N-m/MPa` 20230503` , Left front
+
+
+ENTER_PARSFILE Brakes\Proportioning\BrkProp153.par`02-03-2010`10:00:33
+#FullDataName Brakes: Proportioning / Limiting Valve`Unity Gain`20230503
+#RingCtrl0 COEFFICIENT
+#RadioCtrl0 0
+
+*SCALAR 1
+
+PBK_DL_COEFFICIENT 1
+
+LOG_ENTRY Used Dataset: Brakes: Proportioning / Limiting Valve; { 20230503 } Unity Gain
+#Library : Brakes: Proportioning / Limiting Valve
+#DataSet : Unity Gain
+#Category: 20230503
+#FileID  : BrkProp153
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:33
+#VehCode Prop. / limit. valve
+
+EXIT_PARSFILE Brakes\Proportioning\BrkProp153.par
+
+#BlueLink4 Brakes: Proportioning / Limiting Valve`Unity Gain` 20230503` , Left front
+
+TC_BK 0.06
+TLAG_BK 0
+
+ABS_VMIN 10000
+
+iside 2
+#BlueLink1 Brakes: Torque`300 N-m/MPa` 20230503` , Right front
+
+#BlueLink5 Brakes: Proportioning / Limiting Valve`Unity Gain` 20230503` , Right front
+
+TC_BK 0.06
+TLAG_BK 0
+
+iaxle 2
+iside 1
+
+ENTER_PARSFILE Brakes\Torque\BrkTrq157.par`02-03-2010`10:00:33
+#FullDataName Brakes: Torque`200 N-m/MPa`20230503
+#RingCtrl0 COEFFICIENT
+#RadioCtrl0 0
+
+*SCALAR 200
+
+
+MY_BRAKE_COEFFICIENT 200
+
+LOG_ENTRY Used Dataset: Brakes: Torque; { 20230503 } 200 N-m/MPa
+#Library : Brakes: Torque
+#DataSet : 200 N-m/MPa
+#Category: 20230503
+#FileID  : BrkTrq157
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:33
+#VehCode Brake torque
+
+EXIT_PARSFILE Brakes\Torque\BrkTrq157.par
+
+#BlueLink2 Brakes: Torque`200 N-m/MPa` 20230503` , Left rear
+
+
+ENTER_PARSFILE Brakes\Proportioning\BrkProp154.par`02-03-2010`10:00:34
+#FullDataName Brakes: Proportioning / Limiting Valve`Unity until 2.5MPa then 30%`20230503
+#RingCtrl0 CARPET
+#RadioCtrl0 0
+
+
+*3D_XLabel Dynamic wheel load (N)
+*3D_YLabel Control pressure (MPa)
+*3D_ZLabel Delivery pressure to ABS (MPa)
+
+#DiagramTwo0
+*3D_DATA 2, 3 ! columns x rows
+PBK_DL_CARPET
+0, 1000, 2000
+0, 0, 0
+2.5, 2.5, 2.5
+3.5, 2.8, 2.8
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Brakes: Proportioning / Limiting Valve; { 20230503 } Unity until 2.5MPa then 30%
+#Library : Brakes: Proportioning / Limiting Valve
+#DataSet : Unity until 2.5MPa then 30%
+#Category: 20230503
+#FileID  : BrkProp154
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:34
+#VehCode Prop. / limit. valve
+
+EXIT_PARSFILE Brakes\Proportioning\BrkProp154.par
+
+#BlueLink6 Brakes: Proportioning / Limiting Valve`Unity until 2.5MPa then 30%` 20230503` , Left rear
+
+TC_BK 0.06
+TLAG_BK 0
+
+ABS_VMIN 10000
+
+iside 2
+#BlueLink3 Brakes: Torque`200 N-m/MPa` 20230503` , Right rear
+
+#BlueLink7 Brakes: Proportioning / Limiting Valve`Unity until 2.5MPa then 30%` 20230503` , Right rear
+
+TC_BK 0.06
+TLAG_BK 0
+
+LOG_ENTRY Used Dataset: Brakes: Four-Wheel System; { 20230503 } C-Class, Hatchback w/o ABS
+#Library : Brakes: Four-Wheel System
+#DataSet : C-Class, Hatchback w/o ABS
+#Category: 20230503
+#FileID  : Brk4W146
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:35
+#VehCode 4-wheel system
+
+EXIT_PARSFILE Brakes\4W_System\Brk4W146.par
+
+#BlueLink6 Brakes: Four-Wheel System`C-Class, Hatchback w/o ABS` 20230503` , Brake system
+
+
+ENTER_PARSFILE Steering\System2\StrSys2141.par`02-03-2010`09:59:05
+#FullDataName Steering`C-Class, Hatchback: Power, R&P`20230503
+*I_COL 0.1
+*I_GEAR_IN 0.01
+*D_COL 0.025
+*HYS_COL 1.5
+*BETA_COL 2
+*L1_LKPO 75.3998
+*L2_LKPO 0
+*R1_LKPO 75.3998
+*R2_LKPO 0
+*L1_AKPI 13.7603
+*L2_AKPI 0
+*R1_AKPI 13.7603
+*R2_AKPI 0
+*L1_ACAST 3.000056
+*L2_ACAST 0
+*R1_ACAST 3.000056
+*R2_ACAST 0
+*L1_XKPO 0
+*L2_XKPO 0
+*R1_XKPO 0
+*R2_XKPO 0
+*D_RACK_F 30
+*K_TBAR 2
+
+#RingCtrl0 1
+#RingCtrl1 3
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl4 0
+#RingCtrl5 1
+#RingCtrl6 0
+#RingCtrl7 1
+
+I_COL 0.1
+I_GEAR_IN 0.01
+D_COL 0.025
+HYS_COL 1.5
+BETA_COL 2
+OPT_STEER_DEF 1
+
+OPT_M_SW_CALC 1
+iside 1
+iaxle 1
+L_KPO 75.3998
+A_KPI 13.7603
+A_CASTER 3.000056
+X_KPO 0
+
+iside 2
+L_KPO 75.3998
+A_KPI 13.7603
+A_CASTER 3.000056
+X_KPO 0
+
+iaxle 2
+L_KPO 0
+A_KPI 0
+A_CASTER 0
+X_KPO 0
+
+iside 1
+L_KPO 0
+A_KPI 0
+A_CASTER 0
+X_KPO 0
+
+iaxle 2
+OPT_RACK 1
+RACK_TRAVEL_COEFFICIENT 0.1
+
+ENTER_PARSFILE Steering\Compliance\StrCmp145.par`02-03-2010`09:59:02
+#FullDataName Steering System: Compliance`No Steer Compliance`20230503
+#RingCtrl0 CONSTANT
+#RadioCtrl0 0
+
+*SCALAR 0
+
+STEER_COMP_CONSTANT 0
+
+LOG_ENTRY Used Dataset: Steering System: Compliance; { 20230503 } No Steer Compliance
+#Library : Steering System: Compliance
+#DataSet : No Steer Compliance
+#Category: 20230503
+#FileID  : StrCmp145
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:59:02
+#VehCode Steering compliance
+
+EXIT_PARSFILE Steering\Compliance\StrCmp145.par
+
+#BlueLink14 Steering System: Compliance`No Steer Compliance` 20230503` , Rear compliance
+
+
+iaxle 1
+
+OPT_POWER 1
+OPT_RACK 1
+
+ENTER_PARSFILE Steering\Rack_Kinematics\RackKin130.par`02-03-2010`09:59:04
+#FullDataName Steering System: Rack kinematics`C-Class, Hatchback Rack Kinematics (CS 8.0)`20230503
+#RingCtrl0 LINEAR
+#RadioCtrl0 0
+
+
+#DiagramOne0
+RACK_TRAVEL_TABLE LINEAR
+-745.1791926, -68.74666667
+-710.2908012, -66.1025641
+-678.8907695, -63.65432099
+-650.4262569, -61.38095238
+-624.4654261, -59.26436782
+-600.6639075, -57.28888889
+-578.7423498, -55.44086022
+-558.4708632, -53.70833333
+-539.6579265, -52.08080808
+-522.1422808, -50.54901961
+-505.7868821, -49.1047619
+-490.4743068, -47.74074074
+-476.1032062, -46.45045045
+-462.5855315, -45.22807018
+-449.8443351, -44.06837607
+-437.8120087, -42.96666667
+-426.4288586, -41.91869919
+-415.641941, -40.92063492
+-405.4041042, -39.96899225
+-395.6731934, -39.06060606
+-386.411387, -38.19259259
+-377.5846387, -37.36231884
+-369.1622053, -36.56737589
+-361.1162461, -35.80555556
+-353.4214799, -35.07482993
+-346.0548908, -34.37333333
+0, 0
+346.0548908, 34.37333333
+353.4214799, 35.07482993
+361.1162461, 35.80555556
+369.1622053, 36.56737589
+377.5846387, 37.36231884
+386.411387, 38.19259259
+395.6731934, 39.06060606
+405.4041042, 39.96899225
+415.641941, 40.92063492
+426.4288586, 41.91869919
+437.8120087, 42.96666667
+449.8443351, 44.06837607
+462.5855315, 45.22807018
+476.1032062, 46.45045045
+490.4743068, 47.74074074
+505.7868821, 49.1047619
+522.1422808, 50.54901961
+539.6579265, 52.08080808
+558.4708632, 53.70833333
+578.7423498, 55.44086022
+600.6639075, 57.28888889
+624.4654261, 59.26436782
+650.4262569, 61.38095238
+678.8907695, 63.65432099
+710.2908012, 66.1025641
+745.1791926, 68.74666667
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Steering System: Rack kinematics; { 20230503 } C-Class, Hatchback Rack Kinematics (CS 8.0)
+#Library : Steering System: Rack kinematics
+#DataSet : C-Class, Hatchback Rack Kinematics (CS 8.0)
+#Category: 20230503
+#FileID  : RackKin130
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:59:04
+#VehCode Steering rack
+
+EXIT_PARSFILE Steering\Rack_Kinematics\RackKin130.par
+
+#BlueLink4 Steering System: Rack kinematics`C-Class, Hatchback Rack Kinematics (CS 8.0)` 20230503` , Rack input to output: front
+
+D_RACK 30
+TBAR 2
+
+ENTER_PARSFILE Steering\KinematicsRack2\RkKinAx131.par`02-03-2010`09:59:03
+#FullDataName Steering System: Kinematics for 2 Wheels (Rack & Pinion)`C-Class, Hatchback Wheel Kinematics (CS 8.0)`20230503
+#RingCtrl0 LINEAR
+#RingCtrl1 LINEAR
+
+iside 2
+#DiagramOne0
+RACK_KIN_TABLE LINEAR
+-68.74666667, -51.70173619
+-66.1025641, -49.01831812
+-63.65432099, -46.60343424
+-61.38095238, -44.4178347
+-59.26436782, -42.42986883
+-57.28888889, -40.61362061
+-55.44086022, -38.94760638
+-53.70833333, -37.41383314
+-52.08080808, -35.99709892
+-50.54901961, -34.68446142
+-49.1047619, -33.46482735
+-47.74074074, -32.32863026
+-46.45045045, -31.26757472
+-45.22807018, -30.27443098
+-44.06837607, -29.34286857
+-42.96666667, -28.46732043
+-41.91869919, -27.64287104
+-40.92063492, -26.86516375
+-39.96899225, -26.13032354
+-39.06060606, -25.4348923
+-38.19259259, -24.77577418
+-37.36231884, -24.15018946
+-36.56737589, -23.55563517
+-35.80555556, -22.98985153
+-35.07482993, -22.45079315
+-34.37333333, -21.93660415
+0, 0
+34.37333333, 17.98751142
+35.07482993, 18.33767425
+35.80555556, 18.70226961
+36.56737589, 19.08225052
+37.36231884, 19.47866018
+38.19259259, 19.89264357
+39.06060606, 20.32546085
+39.96899225, 20.77850307
+40.92063492, 21.25331074
+41.91869919, 21.75159574
+42.96666667, 22.27526751
+44.06837607, 22.8264645
+45.22807018, 23.40759213
+46.45045045, 24.0213692
+47.74074074, 24.67088495
+49.1047619, 25.35966994
+50.54901961, 26.09178521
+52.08080808, 26.87193547
+53.70833333, 27.70561519
+55.44086022, 28.59929947
+57.28888889, 29.56069814
+59.26436782, 30.59910026
+61.38095238, 31.72585173
+63.65432099, 32.95503452
+66.1025641, 34.30446174
+68.74666667, 35.7971885
+ENDTABLE
+
+iside 1
+#DiagramOne1
+RACK_KIN_TABLE LINEAR
+-68.74666667, -35.7971885
+-66.1025641, -34.30446174
+-63.65432099, -32.95503452
+-61.38095238, -31.72585173
+-59.26436782, -30.59910026
+-57.28888889, -29.56069814
+-55.44086022, -28.59929947
+-53.70833333, -27.70561519
+-52.08080808, -26.87193547
+-50.54901961, -26.09178521
+-49.1047619, -25.35966994
+-47.74074074, -24.67088495
+-46.45045045, -24.0213692
+-45.22807018, -23.40759213
+-44.06837607, -22.8264645
+-42.96666667, -22.27526751
+-41.91869919, -21.75159574
+-40.92063492, -21.25331074
+-39.96899225, -20.77850307
+-39.06060606, -20.32546085
+-38.19259259, -19.89264357
+-37.36231884, -19.47866018
+-36.56737589, -19.08225052
+-35.80555556, -18.70226961
+-35.07482993, -18.33767425
+-34.37333333, -17.98751142
+0, 0
+34.37333333, 21.93660415
+35.07482993, 22.45079315
+35.80555556, 22.98985153
+36.56737589, 23.55563517
+37.36231884, 24.15018946
+38.19259259, 24.77577418
+39.06060606, 25.4348923
+39.96899225, 26.13032354
+40.92063492, 26.86516375
+41.91869919, 27.64287104
+42.96666667, 28.46732043
+44.06837607, 29.34286857
+45.22807018, 30.27443098
+46.45045045, 31.26757472
+47.74074074, 32.32863026
+49.1047619, 33.46482735
+50.54901961, 34.68446142
+52.08080808, 35.99709892
+53.70833333, 37.41383314
+55.44086022, 38.94760638
+57.28888889, 40.61362061
+59.26436782, 42.42986883
+61.38095238, 44.4178347
+63.65432099, 46.60343424
+66.1025641, 49.01831812
+68.74666667, 51.70173619
+ENDTABLE
+#RadioCtrl0 0
+#RadioCtrl1 0
+
+*SCALAR 0.45
+*SCALAR2 0.45
+
+
+LOG_ENTRY Used Dataset: Steering System: Kinematics for 2 Wheels (Rack & Pinion); { 20230503 } C-Class, Hatchback Wheel Kinematics (CS 8.0)
+#Library : Steering System: Kinematics for 2 Wheels (Rack & Pinion)
+#DataSet : C-Class, Hatchback Wheel Kinematics (CS 8.0)
+#Category: 20230503
+#FileID  : RkKinAx131
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:59:03
+#VehCode Steering kinematics
+
+ENTRY_NOTEFILE Steering\KinematicsRack2\RkKinAx131_note.txt
+Steering Ratio: 17.5:1
+Steering Arm Length: 101.6
+
+EXIT_NOTEFILE Steering\KinematicsRack2\RkKinAx131_note.txt
+
+EXIT_PARSFILE Steering\KinematicsRack2\RkKinAx131.par
+
+#BlueLink10 Steering System: Kinematics for 2 Wheels (Rack & Pinion)`C-Class, Hatchback Wheel Kinematics (CS 8.0)` 20230503` , Rack to front wheels
+
+
+ENTER_PARSFILE Steering\Str_FBoost\FBoost119.par`02-03-2010`09:59:02
+#FullDataName Steering: Power Assist Force`Symetrical, Speed Sensitive Low Boost Curve`20230503
+#RingCtrl0 CARPET
+#RadioCtrl0 0
+
+TC_BOOST 0.08
+
+*3D_XLabel Vehicle speed (kph)
+*3D_YLabel Torsion bar torque (N-m)
+*3D_ZLabel Power assist force (N)
+
+#DiagramTwo0
+*3D_DATA 6, 63 ! columns x rows
+F_BOOST_R_CARPET
+0, 0, 20, 50, 80, 120, 200
+-16, -1250, -1250, -1250, -1250, -1250, -1250
+-15, -1250, -1250, -1250, -1250, -1250, -1250
+-14.5, -1250, -1250, -1250, -1250, -1250, -1250
+-14, -1250, -1250, -1250, -1250, -1250, -1250
+-13.5, -1250, -1250, -1250, -1250, -1250, -1250
+-13, -1250, -1250, -1250, -1250, -1250, -1250
+-12.5, -1250, -1250, -1250, -1250, -1250, -1250
+-12, -1250, -1250, -1250, -1250, -1250, -1250
+-11.5, -1250, -1250, -1250, -1250, -1133.4, -1070.66
+-11, -1250, -1210, -1213.97, -1140.425, -868.065, -750.255
+-10.5, -1250, -1102.5, -1031.56, -907.965, -656.645, -517.11
+-10, -1250, -1000, -869.625, -714.895, -490, -350
+-9.5, -1250, -902.5, -726.715, -556.015, -360.195, -232.195
+-9, -1250, -810, -601.425, -426.61, -260.405, -150.665
+-8.5, -1250, -722.5, -492.38, -322.4, -184.805, -95.37
+-8, -1250, -640, -398.245, -239.545, -128.45, -58.72
+-7.5, -1250, -562.5, -317.72, -174.6, -87.21, -35.04
+-7, -1250, -490, -249.56, -124.515, -57.65, -20.175
+-6.5, -1250, -422.5, -192.545, -86.6, -36.955, -11.155
+-6, -1250, -360, -145.5, -58.505, -22.86, -5.88
+-5.5, -1250, -302.5, -107.3, -38.195, -13.565, -2.93
+-5, -1250, -250, -76.865, -23.945, -7.655, -1.365
+-4.5, -1139.065, -202.5, -53.16, -14.29, -4.07, -0.59
+-4, -800, -160, -35.2, -8.025, -2.005, -0.23
+-3.5, -535.94, -122.5, -22.06, -4.17, -0.9, -0.08
+-3, -337.5, -90, -12.86, -1.96, -0.355, -0.025
+-2.5, -195.315, -62.5, -6.795, -0.8, -0.12, -0.005
+-2, -100, -40, -3.11, -0.27, -0.03, 0
+-1.5, -42.19, -22.5, -1.135, -0.065, -0.005, 0
+-1, -12.5, -10, -0.275, -0.01, 0, 0
+-0.5, -1.565, -2.5, -0.025, 0, 0, 0
+0, 0, 0, 0, 0, 0, 0
+0.5, 1.565, 2.5, 0.025, 0, 0, 0
+1, 12.5, 10, 0.275, 0.01, 0, 0
+1.5, 42.19, 22.5, 1.135, 0.065, 0.005, 0
+2, 100, 40, 3.11, 0.27, 0.03, 0
+2.5, 195.315, 62.5, 6.795, 0.8, 0.12, 0.005
+3, 337.5, 90, 12.86, 1.96, 0.355, 0.025
+3.5, 535.94, 122.5, 22.06, 4.17, 0.9, 0.08
+4, 800, 160, 35.2, 8.025, 2.005, 0.23
+4.5, 1139.065, 202.5, 53.16, 14.29, 4.07, 0.59
+5, 1250, 250, 76.865, 23.945, 7.655, 1.365
+5.5, 1250, 302.5, 107.3, 38.195, 13.565, 2.93
+6, 1250, 360, 145.5, 58.505, 22.86, 5.88
+6.5, 1250, 422.5, 192.545, 86.6, 36.955, 11.155
+7, 1250, 490, 249.56, 124.515, 57.65, 20.175
+7.5, 1250, 562.5, 317.72, 174.6, 87.21, 35.04
+8, 1250, 640, 398.245, 239.545, 128.45, 58.72
+8.5, 1250, 722.5, 492.38, 322.4, 184.805, 95.37
+9, 1250, 810, 601.425, 426.61, 260.405, 150.665
+9.5, 1250, 902.5, 726.715, 556.015, 360.195, 232.195
+10, 1250, 1000, 869.625, 714.895, 490, 350
+10.5, 1250, 1102.5, 1031.56, 907.965, 656.645, 517.11
+11, 1250, 1210, 1213.97, 1140.425, 868.065, 750.255
+11.5, 1250, 1250, 1250, 1250, 1133.4, 1070.66
+12, 1250, 1250, 1250, 1250, 1250, 1250
+12.5, 1250, 1250, 1250, 1250, 1250, 1250
+13, 1250, 1250, 1250, 1250, 1250, 1250
+13.5, 1250, 1250, 1250, 1250, 1250, 1250
+14, 1250, 1250, 1250, 1250, 1250, 1250
+14.5, 1250, 1250, 1250, 1250, 1250, 1250
+15, 1250, 1250, 1250, 1250, 1250, 1250
+16, 1250, 1250, 1250, 1250, 1250, 1250
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Steering: Power Assist Force; { 20230503 } Symetrical, Speed Sensitive Low Boost Curve
+#Library : Steering: Power Assist Force
+#DataSet : Symetrical, Speed Sensitive Low Boost Curve
+#Category: 20230503
+#FileID  : FBoost119
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:59:02
+#VehCode Power assist force
+
+EXIT_PARSFILE Steering\Str_FBoost\FBoost119.par
+
+#BlueLink19 Steering: Power Assist Force`Symetrical, Speed Sensitive Low Boost Curve` 20230503` , Front boost force
+
+
+ENTER_PARSFILE Steering\Compliance\StrCmp146.par`02-03-2010`09:59:02
+#FullDataName Steering System: Compliance`0.001 deg/N-m`20230503
+#RingCtrl0 COEFFICIENT
+#RadioCtrl0 0
+
+*SCALAR 0.001
+
+STEER_COMP_COEFFICIENT 0.001
+
+LOG_ENTRY Used Dataset: Steering System: Compliance; { 20230503 } 0.001 deg/N-m
+#Library : Steering System: Compliance
+#DataSet : 0.001 deg/N-m
+#Category: 20230503
+#FileID  : StrCmp146
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:59:02
+#VehCode Steering compliance
+
+EXIT_PARSFILE Steering\Compliance\StrCmp146.par
+
+#BlueLink13 Steering System: Compliance`0.001 deg/N-m` 20230503` , Front compliance
+
+
+ENTER_PARSFILE Steering\Str_Park_Trq2\TqPkAx120.par`02-03-2010`09:59:02
+#FullDataName Steering: Parking Torque for 2 Wheels`Zero`20230503
+#RingCtrl0 CONSTANT
+#RingCtrl1 CONSTANT
+#RadioCtrl0 0
+#RadioCtrl1 0
+
+*A_MZ_BETA_R 0.1
+*A_MZ_BETA_L 0.1
+*SCALAR 0
+*SCALAR2 0
+
+
+iside 2
+A_MZ_BETA 0.1
+MZ_PARKING_STEER_CONSTANT 0
+
+iside 1
+A_MZ_BETA 0.1
+MZ_PARKING_STEER_CONSTANT 0
+
+LOG_ENTRY Used Dataset: Steering: Parking Torque for 2 Wheels; { 20230503 } Zero
+#Library : Steering: Parking Torque for 2 Wheels
+#DataSet : Zero
+#Category: 20230503
+#FileID  : TqPkAx120
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:59:02
+#VehCode Parking Torque
+
+EXIT_PARSFILE Steering\Str_Park_Trq2\TqPkAx120.par
+
+#BlueLink15 Steering: Parking Torque for 2 Wheels`Zero` 20230503` , Front wheels
+
+
+LOG_ENTRY Used Dataset: Steering; { 20230503 } C-Class, Hatchback: Power, R&P
+#Library : Steering
+#DataSet : C-Class, Hatchback: Power, R&P
+#Category: 20230503
+#FileID  : StrSys2141
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:59:05
+#VehCode 4-wheel steer
+
+ENTRY_NOTEFILE Steering\System2\StrSys2141_note.txt
+Steering Ratio: 17.5:1
+Steering Arm Length: 101.6
+
+EXIT_NOTEFILE Steering\System2\StrSys2141_note.txt
+
+EXIT_PARSFILE Steering\System2\StrSys2141.par
+
+#BlueLink7 Steering`C-Class, Hatchback: Power, R&P` 20230503` , Steering system
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Vehicle: Assembly; { 20230503 } C-Class, Hatchback
+#Library : Vehicle: Assembly
+#DataSet : C-Class, Hatchback
+#Category: 20230503
+#FileID  : Vehicle214
+#Product : CarSim Version 8.02, March 2010
+#Last update: 05-20-2023 10:45:39
+#VehCode Ind_Ind
+
+ENTRY_NOTEFILE Vehicles\Assembly\Vehicle214_note.txt
+This vehicle also features jounce and rebound stops that limit suspension travel.
+
+C-Class type vehicles include Audi A3, Fiat Bravo, Opel Astra.
+EXIT_NOTEFILE Vehicles\Assembly\Vehicle214_note.txt
+
+EXIT_PARSFILE Vehicles\Assembly\Vehicle214.par
+
+#BlueLink2 Vehicle: Assembly`C-Class, Hatchback` 20230503` , Vehicle configuration
+
+
+ENTER_PARSFILE Procedures\Proc191.par`06-05-2022`23:44:02
+#FullDataName Procedures`DLC @ 120 km/h`20230503
+#CheckBox0 1
+OPT_INIT_CONFIG 1
+#CheckBox1 0
+OPT_INIT_ROAD 0
+#CheckBox2 1
+OPT_INIT_SPEED 1
+#CheckBox3 1
+
+#RingCtrl0 1
+#RingCtrl1 1
+OPT_SSTOP 1
+*SPEED 60
+TSTOP 10
+TSTART 0
+SSTART 0
+SGUI_SSTOP 210
+
+TSTART_WRITE = TSTART;
+#RingCtrl2 0
+SSTOP 210
+Opt_SC 2
+SPEED_TIME_CONSTANT 60
+
+ENTER_PARSFILE Control\Steer\Steer134.par`02-03-2010`10:00:28
+#FullDataName Control: Steering (Open Loop)`No Steer`20230503
+OPT_DRIVER_MODEL 0
+OPT_STEER 0
+#RingCtrl0 CONSTANT
+*SCALAR 0
+
+STEER_SW_CONSTANT 0
+#RadioCtrl0 0
+
+
+LOG_ENTRY Used Dataset: Control: Steering (Open Loop); { 20230503 } No Steer
+#Library : Control: Steering (Open Loop)
+#DataSet : No Steer
+#Category: 20230503
+#FileID  : Steer134
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:28
+#VehCode Open-loop steer control
+
+EXIT_PARSFILE Control\Steer\Steer134.par
+
+#BlueLink27 Control: Steering (Open Loop)`No Steer` 20230503` , Steering
+
+
+ENTER_PARSFILE Control\Braking\ConBrk126.par`02-03-2010`10:00:31
+#FullDataName Control: Braking (Open Loop)`No Braking`20230503
+#RingCtrl0 CONSTANT
+#RadioCtrl0 0
+
+OPT_VMIN -1
+*SCALAR 0
+
+PBK_CON_CONSTANT 0
+
+LOG_ENTRY Used Dataset: Control: Braking (Open Loop); { 20230503 } No Braking
+#Library : Control: Braking (Open Loop)
+#DataSet : No Braking
+#Category: 20230503
+#FileID  : ConBrk126
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:31
+#VehCode Brake control
+
+EXIT_PARSFILE Control\Braking\ConBrk126.par
+
+#BlueLink28 Control: Braking (Open Loop)`No Braking` 20230503` , Braking
+
+
+ENTER_PARSFILE Control\Gear_at\GearAT134.par`02-03-2010`10:00:30
+#FullDataName Control: Shifting (Closed Loop)`AT 6th Mode`20230503
+#RingCtrl0 CONSTANT
+#RadioCtrl0 0
+
+*SCALAR 6
+
+MODE_TRANS_CONSTANT 6
+
+LOG_ENTRY Used Dataset: Control: Shifting (Closed Loop); { 20230503 } AT 6th Mode
+#Library : Control: Shifting (Closed Loop)
+#DataSet : AT 6th Mode
+#Category: 20230503
+#FileID  : GearAT134
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:30
+#VehCode Closed-loop shift control
+
+EXIT_PARSFILE Control\Gear_at\GearAT134.par
+
+#BlueLink30 Control: Shifting (Closed Loop)`AT 6th Mode` 20230503` , Shifting control
+
+
+ENTER_PARSFILE Roads\3D_Road\Road163.par`03-10-2010`08:47:43
+#FullDataName Road: 3D Surface`1 km Square`20230503
+OPT_ROAD 1
+iroad 1
+
+RR_SURF 1
+DZ_SHADOW 0.02
+L_CAMERA_FRONT 0.5
+L_CAMERA_REAR 0.5
+*IMAGE_TYPE DEFAULT
+
+ENTER_PARSFILE Roads\Center_XY\RoadXY131.par`02-03-2010`09:59:09
+#FullDataName Road: X-Y Coordinates of Centerline`Straight`20230503
+SPATH 0
+
+#CheckBox0 0
+OPT_ROAD_LOOP 0
+
+#RadioCtrl0 0
+
+OPT_ROAD 1
+
+#DiagramOne0
+YIN_TABLE
+0, 0, 0
+100, 0, 100
+ENDTABLE
+
+LOG_ENTRY Used Dataset: Road: X-Y Coordinates of Centerline; { 20230503 } Straight
+#Library : Road: X-Y Coordinates of Centerline
+#DataSet : Straight
+#Category: 20230503
+#FileID  : RoadXY131
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:59:09
+#VehCode Horizontal (X-Y) table
+
+EXIT_PARSFILE Roads\Center_XY\RoadXY131.par
+
+#BlueLink0 Road: X-Y Coordinates of Centerline`Straight` 20230503` , Centerline geometry
+
+
+ENTER_PARSFILE Roads\Friction\RdFric139.par`02-03-2010`09:59:33
+#FullDataName Road: Friction Map`0.85`20230503
+OPT_ROAD 1
+
+#RingCtrl0 CONSTANT
+MU_ROAD_CONSTANT 0.85
+#RadioCtrl0 0
+
+*SCALAR 0.85
+
+
+LOG_ENTRY Used Dataset: Road: Friction Map; { 20230503 } 0.85
+#Library : Road: Friction Map
+#DataSet : 0.85
+#Category: 20230503
+#FileID  : RdFric139
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:59:33
+#VehCode Friction: Mu vs S, L
+
+EXIT_PARSFILE Roads\Friction\RdFric139.par
+
+#BlueLink3 Road: Friction Map`0.85` 20230503` , Friction
+
+
+ENTER_PARSFILE Roads\Shapes\RdShp158.par`02-03-2010`09:59:35
+#FullDataName Road: Animator Surface Shapes`1 km Square Checkerboard`20230503
+NLANES 4
+#MiscYellow0
+# 0.9 0.9 0.9, pavement, 0.15, 10, 100, -500, m, 500, m, 99, 2, -500, 500, 10, 2, 0,
+# 0.9 0.9 0.9, pavement, 0.15, 10, 99, -500, m, 490, m, 98, 2, -490, 500, 10, 2, 0,
+# 0.9 0.9 0.9, slate (white), 0.10, 10, 99, -490, m, 500, m, 98, 2, -490, 500, 10, 2, 0,
+# 0.9 0.9 0.9, slate (white), 0.10, 10, 99, -500, m, 490, m, 98, 2, -500, 500, 10, 2, 0,
+#ENDMYellow
+
+#CheckBox0 0
+MIRROR 0
+
+COLOR(1) 0.9 0.9 0.9
+MATERIAL(1) pavement
+SPECULAR(1) 0.15
+SCALE(1) 10
+LTILES(1) 100
+LIN(1) -500
+LINUNITS(1) m
+LOUT(1) 500
+LOUTUNITS(1) m
+LDIV(1) 99
+LIPRINT(1) 2
+SSTART(1) -500
+SSTOP(1) 500
+SINT(1) 10
+IPRINT(1) 2
+DZ(1) 0
+COLOR(2) 0.9 0.9 0.9
+MATERIAL(2) pavement
+SPECULAR(2) 0.15
+SCALE(2) 10
+LTILES(2) 99
+LIN(2) -500
+LINUNITS(2) m
+LOUT(2) 490
+LOUTUNITS(2) m
+LDIV(2) 98
+LIPRINT(2) 2
+SSTART(2) -490
+SSTOP(2) 500
+SINT(2) 10
+IPRINT(2) 2
+DZ(2) 0
+COLOR(3) 0.9 0.9 0.9
+MATERIAL(3) slate (white)
+SPECULAR(3) 0.10
+SCALE(3) 10
+LTILES(3) 99
+LIN(3) -490
+LINUNITS(3) m
+LOUT(3) 500
+LOUTUNITS(3) m
+LDIV(3) 98
+LIPRINT(3) 2
+SSTART(3) -490
+SSTOP(3) 500
+SINT(3) 10
+IPRINT(3) 2
+DZ(3) 0
+COLOR(4) 0.9 0.9 0.9
+MATERIAL(4) slate (white)
+SPECULAR(4) 0.10
+SCALE(4) 10
+LTILES(4) 99
+LIN(4) -500
+LINUNITS(4) m
+LOUT(4) 490
+LOUTUNITS(4) m
+LDIV(4) 98
+LIPRINT(4) 2
+SSTART(4) -500
+SSTOP(4) 500
+SINT(4) 10
+IPRINT(4) 2
+DZ(4) 0
+MTL_FILE Roads\materials\road.mtl
+
+
+LOG_ENTRY Used Dataset: Road: Animator Surface Shapes; { 20230503 } 1 km Square Checkerboard
+#Library : Road: Animator Surface Shapes
+#DataSet : 1 km Square Checkerboard
+#Category: 20230503
+#FileID  : RdShp158
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 09:59:35
+#VehCode Road shapes
+
+EXIT_PARSFILE Roads\Shapes\RdShp158.par
+
+#BlueLink4 Road: Animator Surface Shapes`1 km Square Checkerboard` 20230503` , Road shape definitions
+
+add_reference_frame road_stuff_1
+reference_frame_ghosts off
+
+ENTER_PARSFILE Animator\Groups\Group187.par`02-03-2010`10:01:13
+#FullDataName Animator: Group`Partly Cloudy Sky (Normal Resolution)`20230503
+
+ENTER_PARSFILE Animator\Frames\Frame372.par`02-03-2010`10:01:10
+#FullDataName Animator: Reference Frame`Camera Front Point w/o Yaw`20230503
+ADD_REFERENCE_FRAME 20230503 Camera Front Point w/o Yaw
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME X_camF
+SET_Y_NAME Y_camF
+SET_Z_NAME Z_camF
+
+WRT_X_camF
+ANI_X_camF
+WRT_Y_camF
+ANI_Y_camF
+WRT_Z_camF
+ANI_Z_camF
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { 20230503 } Camera Front Point w/o Yaw
+#Library : Animator: Reference Frame
+#DataSet : Camera Front Point w/o Yaw
+#Category: 20230503
+#FileID  : Frame372
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:10
+#VehCode Reference frame
+
+EXIT_PARSFILE Animator\Frames\Frame372.par
+
+#BlueLink0 Animator: Reference Frame`Camera Front Point w/o Yaw` 20230503` , Animator data
+
+
+ENTER_PARSFILE Animator\STL\AniSTL1012.par`02-03-2010`10:01:02
+#FullDataName Animator: Shape File Link`Partly Cloudy Sky (Normal Resolution)`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\scenery\partly_cloudy_sky\sky_normal_res.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+SET_SCALE_X 15
+SET_SCALE_Y 15
+SET_SCALE_Z 15
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z -50
+SMOOTH_MAX_ANGLE 30
+#RingCtrl0 1
+#CheckBox0 1
+set_lighting off
+#CheckBox1 1
+set_fogging off
+#CheckBox3 0
+
+show_front on
+show_back off
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Partly Cloudy Sky (Normal Resolution)
+#Library : Animator: Shape File Link
+#DataSet : Partly Cloudy Sky (Normal Resolution)
+#Category: 20230503
+#FileID  : AniSTL1012
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:02
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1012.par
+
+#BlueLink1 Animator: Shape File Link`Partly Cloudy Sky (Normal Resolution)` 20230503` , Animator data
+
+
+ENTER_PARSFILE Animator\STL\AniSTL1013.par`02-03-2010`10:01:02
+#FullDataName Animator: Shape File Link`Complex Land Bowl for Light Grass`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\scenery\landbowls\complex_land_for_light_grass.obj
+#ENDMYellow
+
+SET_COLOR .8 .8 .8
+SET_SCALE_X 15
+SET_SCALE_Y 15
+SET_SCALE_Z 1
+#RingCtrl0 1
+#CheckBox0 1
+set_lighting off
+#CheckBox1 0
+set_fogging on
+#CheckBox3 0
+
+show_front on
+show_back off
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Complex Land Bowl for Light Grass
+#Library : Animator: Shape File Link
+#DataSet : Complex Land Bowl for Light Grass
+#Category: 20230503
+#FileID  : AniSTL1013
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:02
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1013.par
+
+#BlueLink2 Animator: Shape File Link`Complex Land Bowl for Light Grass` 20230503` , Animator data
+
+
+ENTER_PARSFILE Animator\STL\AniSTL1014.par`02-03-2010`10:01:03
+#FullDataName Animator: Shape File Link`Mountains`20230503
+#MiscYellow3
+add_obj Animator\3D_shape_files_CS\scenery\horizon\mountains_w_light_grass.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+SET_SCALE_X 15
+SET_SCALE_Y 15
+SET_SCALE_Z 3
+*IMAGE_FIT_MODE 1
+#RingCtrl0 1
+#CheckBox0 1
+set_lighting off
+#CheckBox1 0
+set_fogging on
+#CheckBox3 0
+
+show_front on
+show_back off
+
+#BlueLink2 Animator: Camera Setup`Shape Preview (Top)` 20230503` , Animator camera
+
+*IMAGE_TYPE DEFAULT
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { 20230503 } Mountains
+#Library : Animator: Shape File Link
+#DataSet : Mountains
+#Category: 20230503
+#FileID  : AniSTL1014
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:03
+#VehCode Shape File
+
+EXIT_PARSFILE Animator\STL\AniSTL1014.par
+
+#BlueLink3 Animator: Shape File Link`Mountains` 20230503` , Animator data
+
+
+#CheckBox0 0
+
+
+#BlueLink20 Animator: Camera Setup`Shape Preview (Side)` 20230503` , Animator camera
+
+
+LOG_ENTRY Used Dataset: Animator: Group; { 20230503 } Partly Cloudy Sky (Normal Resolution)
+#Library : Animator: Group
+#DataSet : Partly Cloudy Sky (Normal Resolution)
+#Category: 20230503
+#FileID  : Group187
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:13
+#VehCode Animator Group
+
+EXIT_PARSFILE Animator\Groups\Group187.par
+
+#BlueLink6 Animator: Group`Partly Cloudy Sky (Normal Resolution)` 20230503` , Misc. animator set
+
+add_reference_frame road_stuff_2
+reference_frame_ghosts off
+add_reference_frame road_stuff_3
+reference_frame_ghosts off
+add_reference_frame road_stuff_4
+reference_frame_ghosts off
+iroad 2
+
+
+ENTER_PARSFILE Animator\Cameras\Camera291.par`02-03-2010`10:01:14
+#FullDataName Animator: Camera Setup`Rear View , Road Ref. (Frt. Facing)`20230503
+#RingCtrl1 0
+
+#CheckBox0 0
+#CheckBox1 1
+
+GHOST_COUNT 0
+SET_CAMERA_Reference_Frame 20230503 Camera Rear Point w/ Yaw
+
+ENTER_PARSFILE Animator\Frames\Frame373.par`02-03-2010`10:01:10
+#FullDataName Animator: Reference Frame`Camera Rear Point w/ Yaw`20230503
+ADD_REFERENCE_FRAME 20230503 Camera Rear Point w/ Yaw
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME X_camR
+SET_Y_NAME Y_camR
+SET_Z_NAME Z_camR
+SET_YAW_NAME Yaw_CamR
+
+WRT_X_camR
+ANI_X_camR
+WRT_Y_camR
+ANI_Y_camR
+WRT_Z_camR
+ANI_Z_camR
+WRT_Yaw_CamR
+ANI_Yaw_CamR
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { 20230503 } Camera Rear Point w/ Yaw
+#Library : Animator: Reference Frame
+#DataSet : Camera Rear Point w/ Yaw
+#Category: 20230503
+#FileID  : Frame373
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:10
+#VehCode Reference frame
+
+EXIT_PARSFILE Animator\Frames\Frame373.par
+
+#BlueLink0 Animator: Reference Frame`Camera Rear Point w/ Yaw` 20230503` , Reference frame for outside camera
+
+SET_LOOKPOINT_Reference_Frame 20230503 Camera Rear Point w/ Yaw
+SET_LOOKPOINT_X 5
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 1
+SET_AZIMUTH 180
+SET_ELEVATION 3
+SET_DISTANCE 124
+*SET_LOOKPOINT_X 5
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 1
+*SET_AZIMUTH 180
+*SET_ELEVATION 3
+*SET_DISTANCE 124
+GHOST_COUNT 0
+*LIGHT_X -1000
+*LIGHT_Y -1000
+*LIGHT_Z 10000
+FOG_SCALE 0.2
+SET_FIELD_OF_VIEW 9.9
+SUN_POSITION -1000 -1000 10000
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { 20230503 } Rear View , Road Ref. (Frt. Facing)
+#Library : Animator: Camera Setup
+#DataSet : Rear View , Road Ref. (Frt. Facing)
+#Category: 20230503
+#FileID  : Camera291
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:01:14
+#VehCode Camera
+
+EXIT_PARSFILE Animator\Cameras\Camera291.par
+
+#BlueLink5 Animator: Camera Setup`Rear View , Road Ref. (Frt. Facing)` 20230503` , Camera
+
+
+ENTER_PARSFILE Roads\3D_Road\Road163.ani`05-20-2023`09:52:28
+add_reference_frame The Road
+reference_frame_ghosts off
+
+add_obj Roads\3D_Road\Road163_1.obj
+set_color 0.9 0.9 0.9
+show_front on
+show_back off
+compute_normals on
+set_specular 0.15 0.15 0.15
+
+add_obj Roads\3D_Road\Road163_2.obj
+set_color 0.9 0.9 0.9
+show_front on
+show_back off
+compute_normals on
+set_specular 0.15 0.15 0.15
+
+add_obj Roads\3D_Road\Road163_3.obj
+set_color 0.9 0.9 0.9
+show_front on
+show_back off
+compute_normals on
+set_specular 0.1 0.1 0.1
+
+add_obj Roads\3D_Road\Road163_4.obj
+set_color 0.9 0.9 0.9
+show_front on
+show_back off
+compute_normals on
+set_specular 0.1 0.1 0.1
+
+
+
+EXIT_PARSFILE Roads\3D_Road\Road163.ani
+
+
+LOG_ENTRY Used Dataset: Road: 3D Surface; { 20230503 } 1 km Square
+#Library : Road: 3D Surface
+#DataSet : 1 km Square
+#Category: 20230503
+#FileID  : Road163
+#Product : CarSim Version 8.02, March 2010
+#Last update: 03-10-2010 08:47:43
+#VehCode 3D road
+
+EXIT_PARSFILE Roads\3D_Road\Road163.par
+
+#BlueLink0 Road: 3D Surface`1 km Square` 20230503` , Misc.
+
+
+ENTER_PARSFILE Plot\Setup\Plot542.par`02-03-2010`10:00:15
+#FullDataName Plot: Setup`L vs. S -- Lat. Pos. (Road) vs. Station`20230503
+
+ENTER_PARSFILE Plot\Transform\PlotTfm125.par`02-03-2010`10:00:16
+#FullDataName Plot: Data Transform`No Filter`20230503
+#RingCtrl0 None
+FILTER None
+
+
+
+LOG_ENTRY Used Dataset: Plot: Data Transform; { 20230503 } No Filter
+#Library : Plot: Data Transform
+#DataSet : No Filter
+#Category: 20230503
+#FileID  : PlotTfm125
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:16
+#VehCode Plot data transform
+
+EXIT_PARSFILE Plot\Transform\PlotTfm125.par
+
+#BlueLink1 Plot: Data Transform`No Filter` 20230503` , Data transform (optional)
+
+
+
+ENTER_PARSFILE Plot\Format\PlotFmt119.par`02-03-2010`10:00:16
+#FullDataName Plot: Format`Default Plot Settings`20220801
+#RingCtrl0 Axes
+AXES Axes
+#RingCtrl1 Noframe
+FRAME Noframe
+#RingCtrl2 NoGrid
+GRID NoGrid
+#RingCtrl3 FileTitle
+LEGENDFILE FileTitle
+#RingCtrl4 RigidBodyName
+LEGENDDATA_1 RigidBodyName
+#RingCtrl5 AutoLocation
+LEGENDLOCATION AutoLocation
+#RingCtrl6 Regular
+TITLEFONTSTYLE Regular
+#RingCtrl7 Regular
+LEGENDFONTSTYLE Regular
+#RingCtrl8 Regular
+LABELFONTSTYLE Regular
+#RingCtrl9 Regular
+TICLABELFONTSTYLE Regular
+#RingCtrl10 0
+TITLELOCATION 0
+LEGENDPERCENT 40
+TITLEFONTSIZE 14
+LEGENDFONTSIZE 12
+LABELFONTSIZE 14
+TICLABELFONTSIZE 12
+
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LABELFONTNAME Arial
+TICLABELFONTNAME Arial
+SYMBOLS 0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,14,3,4,0,6,7,8,9,10,11,12,13,14,15,1,2,3,4
+
+LOG_ENTRY Used Dataset: Plot: Format; { 20220801 } Default Plot Settings
+#Library : Plot: Format
+#DataSet : Default Plot Settings
+#Category: 20220801
+#FileID  : PlotFmt119
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:16
+#VehCode Plot format
+
+EXIT_PARSFILE Plot\Format\PlotFmt119.par
+
+
+#MiscYellow0
+PLOTCHANNELS Lat_Targ, Station
+PLOTCHANNELS Lat_Veh, Station
+
+#ENDMYellow
+
+
+#RingCtrl0 Linear
+YLINEAR Linear
+#RingCtrl1 Linear
+XLINEAR Linear
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl4 0
+#RingCtrl5 0
+#RingCtrl6 0
+#RingCtrl7 0
+
+
+PTITLE L vs. S -- Lat. Pos. (Road) vs. Station
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { 20230503 } L vs. S -- Lat. Pos. (Road) vs. Station
+#Library : Plot: Setup
+#DataSet : L vs. S -- Lat. Pos. (Road) vs. Station
+#Category: 20230503
+#FileID  : Plot542
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:15
+#VehCode Plot setup
+
+EXIT_PARSFILE Plot\Setup\Plot542.par
+
+#BlueLink8 Plot: Setup`L vs. S -- Lat. Pos. (Road) vs. Station` 20230503` , Plot
+
+
+ENTER_PARSFILE Plot\Setup\Plot543.par`02-03-2010`10:00:12
+#FullDataName Plot: Setup`Steer_SW -- Steering Wheel Angle`20230503
+#BlueLink1 Plot: Data Transform`No Filter` 20230503` , Data transform (optional)
+
+
+
+#MiscYellow0
+PLOTCHANNELS Steer_SW, Time
+
+#ENDMYellow
+
+
+#RingCtrl0 Linear
+YLINEAR Linear
+#RingCtrl1 Linear
+XLINEAR Linear
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl4 0
+#RingCtrl5 0
+#RingCtrl6 0
+#RingCtrl7 0
+
+
+PTITLE Steer_SW -- Steering Wheel Angle
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { 20230503 } Steer_SW -- Steering Wheel Angle
+#Library : Plot: Setup
+#DataSet : Steer_SW -- Steering Wheel Angle
+#Category: 20230503
+#FileID  : Plot543
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:12
+#VehCode Plot setup
+
+EXIT_PARSFILE Plot\Setup\Plot543.par
+
+#BlueLink9 Plot: Setup`Steer_SW -- Steering Wheel Angle` 20230503` , Plot
+
+
+ENTER_PARSFILE Plot\Setup\Plot544.par`02-03-2010`10:00:11
+#FullDataName Plot: Setup`Steer -- Road Wheel Steer (Car, Front)`20230503
+#BlueLink1 Plot: Data Transform`No Filter` 20230503` , Data transform (optional)
+
+
+
+#MiscYellow0
+PLOTCHANNELS Steer_L1, Time
+PLOTCHANNELS Steer_R1, Time
+
+#ENDMYellow
+
+
+#RingCtrl0 Linear
+YLINEAR Linear
+#RingCtrl1 Linear
+XLINEAR Linear
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl4 0
+#RingCtrl5 0
+#RingCtrl6 0
+#RingCtrl7 0
+
+
+PTITLE Steer -- Road Wheel Steer (Car, Front)
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { 20230503 } Steer -- Road Wheel Steer (Car, Front)
+#Library : Plot: Setup
+#DataSet : Steer -- Road Wheel Steer (Car, Front)
+#Category: 20230503
+#FileID  : Plot544
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:11
+#VehCode Plot setup
+
+EXIT_PARSFILE Plot\Setup\Plot544.par
+
+#BlueLink10 Plot: Setup`Steer -- Road Wheel Steer (Car, Front)` 20230503` , Plot
+
+
+ENTER_PARSFILE Plot\Setup\Plot545.par`02-03-2010`10:00:13
+#FullDataName Plot: Setup`Alpha -- Slip Angles (Car, All)`20230503
+#BlueLink1 Plot: Data Transform`No Filter` 20230503` , Data transform (optional)
+
+
+
+#MiscYellow0
+PLOTCHANNELS Alpha_L1, Time
+PLOTCHANNELS Alpha_R1, Time
+PLOTCHANNELS Alpha_L2, Time
+PLOTCHANNELS Alpha_R2, Time
+
+#ENDMYellow
+
+
+#RingCtrl0 Linear
+YLINEAR Linear
+#RingCtrl1 Linear
+XLINEAR Linear
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl4 0
+#RingCtrl5 0
+#RingCtrl6 0
+#RingCtrl7 0
+
+
+PTITLE Alpha -- Slip Angles (Car, All)
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { 20230503 } Alpha -- Slip Angles (Car, All)
+#Library : Plot: Setup
+#DataSet : Alpha -- Slip Angles (Car, All)
+#Category: 20230503
+#FileID  : Plot545
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:13
+#VehCode Plot setup
+
+EXIT_PARSFILE Plot\Setup\Plot545.par
+
+#BlueLink11 Plot: Setup`Alpha -- Slip Angles (Car, All)` 20230503` , Plot
+
+
+ENTER_PARSFILE Plot\Setup\Plot546.par`02-03-2010`10:00:15
+#FullDataName Plot: Setup`Ay -- Lat. Accel. of CG's`20230503
+#BlueLink1 Plot: Data Transform`No Filter` 20230503` , Data transform (optional)
+
+
+
+#MiscYellow0
+PLOTCHANNELS Ay, Time
+PLOTCHANNELS Ay_2, Time
+
+#ENDMYellow
+
+
+#RingCtrl0 Linear
+YLINEAR Linear
+#RingCtrl1 Linear
+XLINEAR Linear
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl4 0
+#RingCtrl5 0
+#RingCtrl6 0
+#RingCtrl7 0
+
+
+PTITLE Ay -- Lat. Accel. of CG's
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { 20230503 } Ay -- Lat. Accel. of CG's
+#Library : Plot: Setup
+#DataSet : Ay -- Lat. Accel. of CG's
+#Category: 20230503
+#FileID  : Plot546
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:15
+#VehCode Plot setup
+
+EXIT_PARSFILE Plot\Setup\Plot546.par
+
+#BlueLink12 Plot: Setup`Ay -- Lat. Accel. of CG's` 20230503` , Plot
+
+
+ENTER_PARSFILE Plot\Setup\Plot547.par`02-03-2010`10:00:15
+#FullDataName Plot: Setup`Roll -- Sprung Masses`20230503
+#BlueLink1 Plot: Data Transform`No Filter` 20230503` , Data transform (optional)
+
+
+
+#MiscYellow0
+PLOTCHANNELS Roll, Time
+PLOTCHANNELS Roll_2, Time
+
+#ENDMYellow
+
+
+#RingCtrl0 Linear
+YLINEAR Linear
+#RingCtrl1 Linear
+XLINEAR Linear
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl4 0
+#RingCtrl5 0
+#RingCtrl6 0
+#RingCtrl7 0
+
+
+PTITLE Roll -- Sprung Masses
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { 20230503 } Roll -- Sprung Masses
+#Library : Plot: Setup
+#DataSet : Roll -- Sprung Masses
+#Category: 20230503
+#FileID  : Plot547
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:15
+#VehCode Plot setup
+
+EXIT_PARSFILE Plot\Setup\Plot547.par
+
+#BlueLink13 Plot: Setup`Roll -- Sprung Masses` 20230503` , Plot
+
+
+ENTER_PARSFILE Plot\Setup\Plot548.par`02-03-2010`10:00:16
+#FullDataName Plot: Setup`Yaw Rate -- Sprung Masses`20230503
+#BlueLink1 Plot: Data Transform`No Filter` 20230503` , Data transform (optional)
+
+
+
+#MiscYellow0
+PLOTCHANNELS AVz, Time
+PLOTCHANNELS AVz_2, Time
+
+#ENDMYellow
+
+
+#RingCtrl0 Linear
+YLINEAR Linear
+#RingCtrl1 Linear
+XLINEAR Linear
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl4 0
+#RingCtrl5 0
+#RingCtrl6 0
+#RingCtrl7 0
+
+
+PTITLE Yaw Rate -- Sprung Masses
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { 20230503 } Yaw Rate -- Sprung Masses
+#Library : Plot: Setup
+#DataSet : Yaw Rate -- Sprung Masses
+#Category: 20230503
+#FileID  : Plot548
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:16
+#VehCode Plot setup
+
+EXIT_PARSFILE Plot\Setup\Plot548.par
+
+#BlueLink14 Plot: Setup`Yaw Rate -- Sprung Masses` 20230503` , Plot
+
+
+ENTER_PARSFILE Plot\Setup\Plot549.par`02-03-2010`10:00:13
+#FullDataName Plot: Setup`Fz -- Vertical Forces (Car, All)`20230503
+#BlueLink1 Plot: Data Transform`No Filter` 20230503` , Data transform (optional)
+
+
+
+#MiscYellow0
+PLOTCHANNELS Fz_L1, Time
+PLOTCHANNELS Fz_R1, Time
+PLOTCHANNELS Fz_L2, Time
+PLOTCHANNELS Fz_R2, Time
+
+#ENDMYellow
+
+
+#RingCtrl0 Linear
+YLINEAR Linear
+#RingCtrl1 Linear
+XLINEAR Linear
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl4 0
+#RingCtrl5 0
+#RingCtrl6 0
+#RingCtrl7 0
+
+
+PTITLE Fz -- Vertical Forces (Car, All)
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { 20230503 } Fz -- Vertical Forces (Car, All)
+#Library : Plot: Setup
+#DataSet : Fz -- Vertical Forces (Car, All)
+#Category: 20230503
+#FileID  : Plot549
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:13
+#VehCode Plot setup
+
+EXIT_PARSFILE Plot\Setup\Plot549.par
+
+#BlueLink15 Plot: Setup`Fz -- Vertical Forces (Car, All)` 20230503` , Plot
+
+
+LOG_ENTRY Used Dataset: Procedures; { 20230503 } DLC @ 120 km/h
+#Library : Procedures
+#DataSet : DLC @ 120 km/h
+#Category: 20230503
+#FileID  : Proc191
+#Product : CarSim Version 8.02, March 2010
+#Last update: 06-05-2022 23:44:02
+#VehCode Procedure
+
+ENTRY_NOTEFILE Procedures\Proc191_note.txt
+This procedure is an example of a common Double Lane Change handling test.
+EXIT_NOTEFILE Procedures\Proc191_note.txt
+
+EXIT_PARSFILE Procedures\Proc191.par
+
+#BlueLink28 Procedures`DLC @ 120 km/h` 20230503` , Procedure
+
+Opt_SC 2
+SPEED_TIME_CONSTANT 60
+
+ENTER_PARSFILE Control\Steer\Steer101.par`02-03-2010`10:00:28
+#FullDataName Control: Steering (Open Loop)`No Steer`
+OPT_DRIVER_MODEL 0
+OPT_STEER 0
+#RingCtrl0 CONSTANT
+*SCALAR 0
+
+STEER_SW_CONSTANT 0
+#RadioCtrl0 0
+
+
+LOG_ENTRY Used Dataset: Control: Steering (Open Loop); No Steer
+#Library : Control: Steering (Open Loop)
+#DataSet : No Steer
+#Category:
+#FileID  : Steer101
+#Product : CarSim Version 8.01, January 2010
+#Last update: 02-03-2010 10:00:28
+#VehCode Open-loop steer control
+
+EXIT_PARSFILE Control\Steer\Steer101.par
+
+#BlueLink3 Control: Steering (Open Loop)`No Steer` ` , Steering
+
+
+ENTER_PARSFILE Control\Braking\ConBrk102.par`07-21-2022`12:13:28
+#FullDataName Control: Braking (Open Loop)`No Braking`
+#RingCtrl0 CONSTANT
+#RadioCtrl0 0
+
+OPT_VMIN -1
+*SCALAR 0.0
+
+PBK_CON_CONSTANT 0.0
+
+LOG_ENTRY Used Dataset: Control: Braking (Open Loop); No Braking
+#Library : Control: Braking (Open Loop)
+#DataSet : No Braking
+#Category:
+#FileID  : ConBrk102
+#Product : CarSim Version 8.02, March 2010
+#Last update: 07-21-2022 12:13:28
+#VehCode Brake control
+
+EXIT_PARSFILE Control\Braking\ConBrk102.par
+
+#BlueLink4 Control: Braking (Open Loop)`No Braking` ` , Braking
+
+*SPEED 60
+*TSTOP 10
+*TSTART 0
+TSTART 0
+TSTOP 10
+TSTART_WRITE = TSTART;
+#RingCtrl2 0
+OPT_SSTOP 0
+
+
+ENTER_PARSFILE Plot\Setup\Plot550.par`02-03-2010`10:00:15
+#FullDataName Plot: Setup`Az -- Vert. Accel. of CG's`20230503
+#BlueLink1 Plot: Data Transform`No Filter` 20230503` , Data transform (optional)
+
+
+
+#MiscYellow0
+PLOTCHANNELS Az, Time
+PLOTCHANNELS Az_2, Time
+
+#ENDMYellow
+
+
+#RingCtrl0 Linear
+YLINEAR Linear
+#RingCtrl1 Linear
+XLINEAR Linear
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl4 0
+#RingCtrl5 0
+#RingCtrl6 0
+#RingCtrl7 0
+
+
+PTITLE Az -- Vert. Accel. of CG's
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { 20230503 } Az -- Vert. Accel. of CG's
+#Library : Plot: Setup
+#DataSet : Az -- Vert. Accel. of CG's
+#Category: 20230503
+#FileID  : Plot550
+#Product : CarSim Version 8.02, March 2010
+#Last update: 02-03-2010 10:00:15
+#VehCode Plot setup
+
+EXIT_PARSFILE Plot\Setup\Plot550.par
+
+#BlueLink15 Plot: Setup`Az -- Vert. Accel. of CG's` 20230503` , Plot
+
+
+*IMAGE_TYPE DEFAULT
+
+OPT_ALL_WRITE 1
+WRITE_SENSOR_DETECT
+Title Baseline <20230503>
+CATEGORY 20230503
+DATASET_TITLE Baseline
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { 20230503 } Baseline
+#Library : CarSim Run Control
+#DataSet : Baseline
+#Category: 20230503
+#FileID  : Run381
+#Product : CarSim Version 8.02, March 2010
+#Last update: 05-20-2023 10:17:59
+#VehCode Run
+
+ENTRY_NOTEFILE Runs\Run381_note.txt
+Use this example when you follow the steps in the Quick Start Guide, a brief introduction to using CarSim.
+
+Open the Quick Start Guide from the Help menu; it's near the bottom with name "Quick Start Guide".
+
+The Quick Start Guide introduces the basic operation of CarSim. It shows you how to change vehicle data, make runs, and view results using the Animator and Plotter. It takes about an hour to cover the basics, and another hour to continue and use more features. It includes new database options introduced in CarSim 8, which will help you even if you are already experienced in using earlier versions.
+EXIT_NOTEFILE Runs\Run381_note.txt
+
+EXIT_PARSFILE Runs\Run381.par
+
+
+
+END
